@@ -5,13 +5,13 @@ import Stars from '../../SVG/TopNameStars.svg'
 
 
 
-const Intro = () => {
+const IntroTop = () => {
     return (
         <IntroDiv> 
            <IntroDivContainer>
                 <KimDiv>
                     <KimThree> 
-                        KIMBERLY SWINTON's
+                        KIMBERLY SWINTON'S
                     </KimThree>   
                     
                     <KimTwo> 
@@ -39,6 +39,7 @@ height: auto;
 text-align: center;
 display: flex;
 flex-direction: column;
+justify-content: space-evenly;
 margin: 0 auto;
 box-sizing: border-box;
 
@@ -95,31 +96,34 @@ box-shadow: 0px 50px 50px rgba(46, 0, 77, 1);
 `;
 
 const KimDiv = styled.div`
-width: 100%;
+max-width: 100%;
 height: 100px;
-font-size: 8rem;
+font-size: 7rem;
 font-weight: bold;
 font-family: 'Exo 2', sans-serif;
 text-align: center;
 position: relative;
 margin: 50px 50px 30px 50px;
+display: flex;
+justify-content: space-evenly;
 `
 
 const Kim = styled.h1`
-margin: 0px;
 color: #DCE3FF;
 position: absolute;
 `;
 
 const KimTwo = styled.h1`
-margin: 13px 0px 0px 5px;
+top: 14px;
+left: 50px;
 color: #813CD9;
 position: absolute;
    
 `;
 
 const KimThree = styled.h1`
-margin: 26px 0px 0px 20px;
+top: 30px;
+left: 56px;
 color: #17135D;
 position: absolute;
 `;
@@ -135,4 +139,4 @@ font-family: 'Exo 2', sans-serif;
 `;
 
 
-export default Intro;
+export default IntroTop;

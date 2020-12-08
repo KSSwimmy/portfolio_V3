@@ -14,6 +14,7 @@ import LandingPageBiggerStars from '../SVG/BIGGERSTARS.svg'
 import Neptune from '../SVG/neptune.svg'
 import Uranus from '../SVG/uranus.svg'
 import Pluto from '../SVG/pluto.svg'
+import styled from 'styled-components'
 
 
 
@@ -23,7 +24,7 @@ const ParallaxEffect = () => {
     let parallax;
   return (
 
-    <>
+    <Page>
     <Parallax className="layer" pages={5} ref={ref => parallax = ref}>
 
       {/* background color */}
@@ -143,9 +144,15 @@ const ParallaxEffect = () => {
         </ParallaxLayer>
 
         </Parallax>
-    </>
+    </Page>
   );
 }
 
+const Page = styled.div`
+
+width: 100%;
+max-height: 100vh;
+
+`;
 
         export default ParallaxEffect;   
