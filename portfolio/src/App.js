@@ -42,6 +42,7 @@ z-index: 1;
 const ParDiv = styled.div`
 position: relative;
 position: fixed;
+z-index: 3;
 width: 50%;
 height: 100vh;
 `;
