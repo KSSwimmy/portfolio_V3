@@ -1,6 +1,6 @@
 import ParallaxEffect from './components/ParallaxEffect'
 import styled from 'styled-components'
-import Intro from './components/Intro'
+import Intro from './components/Into/IntroTop'
 import './index.css';
 
 function App() {
