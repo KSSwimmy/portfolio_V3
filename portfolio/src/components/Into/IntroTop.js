@@ -35,7 +35,7 @@ const IntroTop = () => {
 const IntroDiv = styled.div`
 position: relative;
 background: rgba(12,0,35,1);
-padding: 70px;
+padding: 40px;
 width: 100%;
 height: auto;
 text-align: center;

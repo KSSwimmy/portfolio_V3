@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import IntroTop from './components/Into/IntroTop'
 import IntroBottom from './components/Into/IntroBottom'
 import AboutMe from './components/AboutMe'
+import ImageGallery from './components/Work/ImageGallery'
 
 import './index.css';
 
@@ -23,6 +24,7 @@ function App() {
         <IntroBottom />
         </IntroBottomContainer>
         <AboutMe />
+        <ImageGallery />
       </Column>  
     </AppDiv>
   </AppContainer>

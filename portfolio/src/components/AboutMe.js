@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import LandingPageStars from '../SVG/bodyStars.svg'
-import MyPic from '../SVG/me.jpg'
+
 
 
 
@@ -34,14 +34,14 @@ height: 100vh;
 `
 const AboutMeDiv = styled.div`
 padding-top: 200px;
-padding-bottom: 200px;
-font-weight: 200:
+padding-bottom: 100px;
+font-weight: lighter:
 width: 100%;
 height: auto;
 display: flex;
 text-align: center;
 justify-content: space-evenly;
-background: #1C0049;
+background: rgb(22,0,57);
 `;
 const AboutBorderDiv = styled.div`
 text-align: center;
@@ -67,7 +67,7 @@ color: #DCE3FF;
 margin-top: 40px;
 `
 const TheParagraphDiv = styled.div`
-font-size: 3.5rem;
+font-size: 2.5rem;
 width: 100%;
 margin: 50px; ;
 `
