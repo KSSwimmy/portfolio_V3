@@ -1,18 +1,23 @@
-import React from 'react'
 import ReUsableModal from './ReUsableModal'
 import styled from 'styled-components'
+import React from 'react'
 
 
 
 const ImageGallery = () => {
+    const modalRef = React.useRef();
 
     const openModal = () => {
-        console.log('Open Modal')
+        modalRef.current.openModal()
+        
     }
 
     return(
         <OpenModal>
             <Button onClick={openModal}>Open Modal</Button>
+            <ReUsableModal ref={modalRef}>
+                <h1>Bookr App</h1>
+            </ReUsableModal>
         </OpenModal>
     )
 }

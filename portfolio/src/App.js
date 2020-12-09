@@ -18,28 +18,21 @@ function App() {
 
       <Column> 
         <IntroTopContainer>
-        <IntroTop /> 
+          <IntroTop /> 
         </IntroTopContainer>
         <IntroBottomContainer>
-        <IntroBottom />
+          <IntroBottom />
         </IntroBottomContainer>
         <AboutMe />
-        <ImageGallery />
+        <ImageGalleryContainer>
+          <ImageGallery />
+        </ImageGalleryContainer>
       </Column>  
     </AppDiv>
   </AppContainer>
   );
 }
 
-const IntroTopContainer = styled.div `
-position: relative;
-z-index: 2;
-`;
-
-const IntroBottomContainer = styled.div `
-position: relative;
-z-index: 1;
-`;
 
 const ParDiv = styled.div`
 position: relative;
@@ -58,7 +51,6 @@ const AppDiv = styled.div`
   margin: 0 auto;
 `;
 
-
 const AppContainer = styled.div`
 margin: 0 auto;
 min-height: 100vh;
@@ -72,7 +64,22 @@ flex-direction: column;
 width: 50%;
 height: 100vh;
 
-`
+`;
 
+const IntroTopContainer = styled.div `
+position: relative;
+z-index: 2;
+`;
+
+const IntroBottomContainer = styled.div `
+position: relative;
+z-index: 1;
+`;
+
+const ImageGalleryContainer = styled.div`
+width: 100%;
+height: 100vh;
+z-index: 5;
+`;
 
 export default App;
