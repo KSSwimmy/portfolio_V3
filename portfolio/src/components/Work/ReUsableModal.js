@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // In order to use a ref in a functional component, forwardRef() must be used. 
 
 const ReUsableModal = forwardRef(
-    (props,ref) => {
+    (modalProps,ref) => {
         const [display, setDisplay] = React.useState(false);
 
     // passing the 'open' and 'close' functionalities to the images. 
@@ -36,13 +36,13 @@ const ReUsableModal = forwardRef(
             <ModalWrapper>
                 <ModalBackdrop onClick={close}/>
                 <ModalBox>
-                    {props.children}
+                    {modalProps.children}
                 </ModalBox>
             </ModalWrapper>
           
        )        
     }
-    
+
     return null
         
     }
@@ -76,7 +76,7 @@ width: 60%;
 transform: translate(-50%, -50%);
 overflow-y: auto;
 border-radius: 20px;
-background: rgb(17,0,45);
+background: rgb(22,0,57);
 box-shadow: 0 0 17px rgba(0,0,0,0.30);
 z-index: 101;
 padding: 40px;
