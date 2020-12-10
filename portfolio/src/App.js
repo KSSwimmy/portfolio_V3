@@ -4,6 +4,7 @@ import IntroTop from './components/Into/IntroTop'
 import IntroBottom from './components/Into/IntroBottom'
 import AboutMe from './components/AboutMe'
 import ImageGallery from './components/Work/ImageGallery'
+import Form from './components/Form/form'
 
 import './index.css';
 
@@ -27,6 +28,7 @@ function App() {
         <ImageGalleryContainer>
           <ImageGallery />
         </ImageGalleryContainer>
+        <Form />
       </Column>  
     </AppDiv>
   </AppContainer>
