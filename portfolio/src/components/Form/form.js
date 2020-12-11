@@ -1,13 +1,26 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
 
 export default function Form() {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = data => console.log(data);
   console.log(errors);
+
+  function sendEmail(e){
+      e.preventDefault();
+
+      emailjs.sendForm('gmail', 'template_wn4meys', e.target, 'user_RGchjDEpAojOiC34MHwys')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+  }
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit, sendEmail)}>
       <input type="text" placeholder="First name" name="First name" ref={register({required: true, maxLength: 80})} />
       <input type="text" placeholder="Last name" name="Last name" ref={register({required: true, maxLength: 100})} />
       <input type="text" placeholder="Email" name="Email" ref={register({required: true, pattern: /^\S+@\S+$/i})} />

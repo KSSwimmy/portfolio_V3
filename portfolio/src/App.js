@@ -4,7 +4,7 @@ import IntroTop from './components/Into/IntroTop'
 import IntroBottom from './components/Into/IntroBottom'
 import AboutMe from './components/AboutMe'
 import ImageGallery from './components/Work/ImageGallery'
-import Form from './components/Form/form'
+import Form from './components/Form/Form'
 
 import './index.css';
 
