@@ -69,7 +69,7 @@ margin-top: 40px;
 const TheParagraphDiv = styled.div`
 font-size: 2.5rem;
 width: 100%;
-margin: 50px; ;
+margin: 50px; 
 `
 
 
