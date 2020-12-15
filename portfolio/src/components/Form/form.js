@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components'
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
-init('user_RGchjDEpAojOiC34MHwys')
+
 
 
 export default function Form() {
@@ -54,7 +54,7 @@ export default function Form() {
   
   return (
     <LetsTalkDiv>
-    <p className='status-message'>{statusMessage}</p>    
+    <StatMsg className='status-message'>{statusMessage}</StatMsg>    
     <FormContainer className='contact-form' id='contact-form' onSubmit={handleSubmit(onSubmit)}>
       <Input type="text" placeholder="First name" name="First name" ref={register({required: true, maxLength: 80})} />
      
@@ -89,10 +89,29 @@ export default function Form() {
   );
 }
 
+const StatMsg = styled.h1.attrs(props =>({
+  className: props.className,
+}))`
+
+& .status-message{
+  opacity: 0; 
+}
+
+& .success {
+  opacity: 1;
+  color: green;
+}
+& .failure {
+  opacity: 1;
+  color: red;
+}
+
+`;
+
 const LetsTalkDiv = styled.div`
 padding-top: 200px;
 padding-bottom: 100px;
-font-weight: lighter:
+font-weight: lighter;
 width: 100%;
 height: auto;
 display: flex;
@@ -104,7 +123,16 @@ background: rgb(22,0,57);
 
 const FormContainer = styled.form`
 
+
+
 `;
+
+
+
+
+
+
+
 
 const Input = styled.input`
 width: 600px;
@@ -117,3 +145,5 @@ const Textarea = styled.textarea`
 height: 10em;
 width: 600px;
 `;
+
+init('user_RGchjDEpAojOiC34MHwys')
