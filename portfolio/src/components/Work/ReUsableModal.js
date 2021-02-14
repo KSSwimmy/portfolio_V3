@@ -7,18 +7,22 @@ import styled from 'styled-components'
 const ReUsableModal = forwardRef(
     (modalProps,ref) => {
         const [display, setDisplay] = React.useState(false);
-
+        const [modalData, setModalData] = React.useState({})
     // passing the 'open' and 'close' functionalities to the images. 
-    useImperativeHandle(
-        ref,
-        () => {
-            return {
-                openModal: () => open(),
-                close: () => close()
-            }
-        },
-       
-    )
+        useImperativeHandle(
+            ref,
+            
+            () => {
+                return {
+                    openModal: (data) => {
+                        setModalData(data)
+                        open()
+                    },
+                    close: () => close()
+                }
+            },
+        
+        )
     
     
         // open function to set display to true. 
@@ -30,13 +34,13 @@ const ReUsableModal = forwardRef(
         const close = () => {
             setDisplay(false)
         }
-    
         if (display) {
         return(
             <ModalWrapper>
                 <ModalBackdrop onClick={close}/>
                 <ModalBox>
-                    {modalProps.children}
+                    {modalData.title}
+                    {modalData.description}
                 </ModalBox>
             </ModalWrapper>
           

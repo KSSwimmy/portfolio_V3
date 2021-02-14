@@ -5,7 +5,7 @@ import React from 'react'
 const Bookr = (bookrProps) => {
     return (
         <div>
-            <p>I am showing</p>
+            <p>I am showing {bookrProps.modalData.name}</p>
         </div>
     )
 }
