@@ -7,7 +7,7 @@ import { data } from './data.js'
 
 const ImageGallery = () => {
     const modalRef = React.useRef();
-    const dataRef = React.useRef()
+    
 
     const openModal = (data) => {
         modalRef.current.openModal(data)  
