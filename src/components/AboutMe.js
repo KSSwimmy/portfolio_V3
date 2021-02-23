@@ -41,7 +41,7 @@ height: auto;
 display: flex;
 text-align: center;
 justify-content: space-evenly;
-background: rgb(22,0,57);
+background: transparent;
 `;
 const AboutBorderDiv = styled.div`
 text-align: center;

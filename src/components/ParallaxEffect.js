@@ -14,6 +14,11 @@ import LandingPageBiggerStars from '../SVG/BIGGERSTARS.svg'
 import Neptune from '../SVG/neptune.svg'
 import Uranus from '../SVG/uranus.svg'
 import Pluto from '../SVG/pluto.svg'
+import IntroTop from './Into/IntroTop'
+import IntroBottom from './Into/IntroBottom'
+import AboutMe from './AboutMe'
+import ImageGallery from './Work/ImageGallery'
+import Form from './Form/Form'
 import styled from 'styled-components'
 
 
@@ -36,7 +41,7 @@ const ParallaxEffect = () => {
       {/* <ParallaxLayer offset={1.9} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} /> */}
 
   
-      
+      <Planets>
         <ParallaxLayer offset={0} 
                        speed={0.8}>
             <img
@@ -142,7 +147,23 @@ const ParallaxEffect = () => {
           src={Pluto} 
           alt="Pluto" />
         </ParallaxLayer>
+      </Planets>
 
+      <ParallaxLayer>
+        <Column> 
+          <IntroTopContainer>
+            <IntroTop /> 
+          </IntroTopContainer>
+          <IntroBottomContainer>
+            <IntroBottom />
+          </IntroBottomContainer>
+          <AboutMe />
+          <ImageGalleryContainer>
+            <ImageGallery />
+          </ImageGalleryContainer>
+          <Form />
+        </Column>  
+      </ParallaxLayer>
         </Parallax>
     </Page>
   );
@@ -153,6 +174,37 @@ const Page = styled.div`
 width: 100%;
 max-height: 100vh;
 
+`;
+
+const Column = styled.div`
+margin-left: 50%;
+display: flex;
+flex-direction: column; 
+width: 50%;
+height: 100vh;
+
+`;
+
+const IntroTopContainer = styled.div `
+position: relative;
+z-index: 2;
+`;
+
+const Planets = styled.div `
+position: relative;
+width: 50%;
+
+`;
+
+const IntroBottomContainer = styled.div `
+position: relative;
+z-index: 1;
+`;
+
+const ImageGalleryContainer = styled.div`
+width: 100%;
+height: 100vh;
+z-index: 5;
 `;
 
         export default ParallaxEffect;   

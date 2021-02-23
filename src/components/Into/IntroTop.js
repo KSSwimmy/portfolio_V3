@@ -34,7 +34,7 @@ const IntroTop = () => {
 
 const IntroDiv = styled.div`
 position: relative;
-background: rgba(12,0,35,1);
+background: transparent;
 padding: 40px;
 width: 100%;
 height: auto;
@@ -42,24 +42,6 @@ text-align: center;
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-box-sizing: border-box;
-
-&:after {
-position: absolute;
-width: 100%;
-height: 100%;
-content: '';
-background: inherit;
-z-index: -1;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-transform-origin: top left;
-transform: skewY(9deg);
-box-shadow: 0px 50px 50px rgba(46, 0, 77, 1);
-
-   }  
 
 
 

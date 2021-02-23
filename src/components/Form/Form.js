@@ -111,7 +111,7 @@ display: flex;
 flex-direction: column;
 text-align: center;
 justify-content: space-evenly;
-background: rgb(22,0,57);
+background: transparent;
 `;
 
 

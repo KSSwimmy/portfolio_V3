@@ -140,7 +140,7 @@ text-align: center;
 `;
 
 const OpenModal = styled.div`
-background: rgb(22,0,57);
+background: transparent;
 text-align: center;
 
 `;

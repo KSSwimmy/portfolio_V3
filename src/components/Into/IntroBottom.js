@@ -46,33 +46,13 @@ const IntroBottom = () => {
 
 const IntroDiv = styled.div`
 position: relative;
-background: #1E0030;
+background: transparent;
 width: 100%;
 height: auto;
 display: flex;
 flex-direction: column;
 text-align: left;
 padding: 30px;
-
-box-sizing: border-box;
-
-&:after {
-position: absolute;
-width: 100%;
-height: 100%;
-content: '';
-background: inherit;
-z-index: -1;
-top: 20px;
-right: 0;
-bottom: 0;
-left: 0;
-transform-origin: top right;
-transform: skewY(-9deg);
-box-shadow: 0px 50px 50px 0px rgba(17,39,101,1);
-
-   }  
-
 
 `;
 
