@@ -1,7 +1,7 @@
 import ReUsableModal from './ReUsableModal'
 import styled, { ThemeProvider } from 'styled-components'
 import React, { useState } from 'react'
-import Bookr from './Projects/Bookr.js'
+
 import { data } from './data.js'
 
 
@@ -91,7 +91,7 @@ const ImageGallery = () => {
             <OpenModalContainer>
                 {modalContent.map((eachModalData, index) => (
                     <BookrWrapper key={index}>
-                        <Button theme={eachModalData.style}  onClick={() => openModal(data[index])}>
+                        <Button theme={eachModalData.style} onClick={() => openModal(data[index])}>
                             {eachModalData.content}
                         </Button>
                         <ReUsableModal ref={modalRef} />
@@ -118,7 +118,7 @@ const BookrWrapper = styled.div`
 const OpenModalContainer = styled.div`
 padding-top: 50px;
 padding-bottom: 100px;
-font-weight: lighter:
+
 width: 100%;
 height: auto;
 display: flex;

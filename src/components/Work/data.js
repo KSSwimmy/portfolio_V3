@@ -1,18 +1,22 @@
+import Bookr from './Projects/Bookr'
+import styled, { ThemeProvider } from 'styled-components'
+
 export const data = [
     {
-        title: 'This is First modal',
-        description: 'bllah'
+        content: <Bookr />,
+        
     },
     {
-        title: 'This is Second modal',
-        description: 'bllah'
+        content: 'This is Second modal', 
     },
     {
-        title: 'This is Third modal',
-        description: 'bllah'
+        content: 'This is Third modal',
     },
     {
-        title: 'This is Fourth modal',
-        description: 'bllah'
+        content: 'This is Fourth modal',
     },
-]
+];
+
+
+
+
