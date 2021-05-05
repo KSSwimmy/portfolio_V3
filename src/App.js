@@ -1,8 +1,14 @@
+import './index.css';
 import ParallaxEffect from './components/ParallaxEffect'
 import styled from 'styled-components'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faLink)
 
 
-import './index.css';
+
 
 function App() {
   return (
