@@ -56,7 +56,9 @@ font-size: 6rem;
 text-align: center;
 `;
 const FirstP = styled.div`
-
+font-family: 'Open Sans', sans-serif;
+color: #DCE3FF;
+text-align: left;
 `
 const SecP = styled.div`
 

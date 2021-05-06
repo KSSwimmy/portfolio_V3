@@ -61,7 +61,6 @@ width: 100%;
 height: auto;
 font-size: 4rem;
 font-weight: extra-light;
-font-family: 'Exo 2', sans-serif;
 margin-left: -5px ;
 margin-top: 90px;
 display: flex;

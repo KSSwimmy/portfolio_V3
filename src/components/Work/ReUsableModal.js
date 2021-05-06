@@ -75,7 +75,7 @@ position: relative;
 margin-top: 1965px;
 left: 50%;
 height: 85%;
-width: 60%;
+width: 85%;
 transform: translate(-50%, -50%);
 overflow-y: auto;
 border-radius: 20px;
