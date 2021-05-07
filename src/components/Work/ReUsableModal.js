@@ -72,7 +72,7 @@ background-color: rgba(11,0,29,0.3);
 
 const ModalBox = styled.div `
 position: relative;
-margin-top: 1965px;
+top: 90%;
 left: 50%;
 height: 85%;
 width: 85%;

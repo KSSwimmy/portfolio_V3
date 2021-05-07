@@ -15,25 +15,25 @@ const ImageGallery = () => {
 
     const modalContent = [
         {
-            content: 'First',
+            content: 'Bookr',
             style: {
                 main: "linear-gradient(115deg, rgba(252,255,0,1) 0%, rgba(255,184,0,1) 54%, rgba(242,118,0,1) 100%);"
             }
         },
         {
-            content: 'Second',
+            content: 'Ori',
             style: {
                 main: "linear-gradient(-35deg, rgba(158,221,0,1) 0%, rgba(0,117,52,1) 49%, rgba(1,4,0,1) 100%)"
             }
         },
         {
-            content: 'Third',
+            content: 'Xport',
             style: {
                 main: "linear-gradient(-144deg, rgba(85,0,193,1) 0%, rgba(99,27,135,1) 49%, rgba(30,0,48,1) 100%)"
             }
         },
         {
-            content: 'Fourth',
+            content: 'Net-Giver',
             style: {
                 main: "linear-gradient(-144deg, rgba(255,17,17,1) 0%, rgba(171,0,0,1) 49%, rgba(94,0,0,1) 100%)"
             }
@@ -112,17 +112,18 @@ const ImageGallery = () => {
 }
 
 const BookrWrapper = styled.div`
-
+width: 100%;
+height: 100%;
 `;
 
 const OpenModalContainer = styled.div`
 padding-top: 50px;
 padding-bottom: 100px;
-
+height: 500px;
 width: 100%;
 height: auto;
 display: flex;
-justify-content: space-evenly;
+justify-content: space-around;
 `;
 
 const WorkBorderDiv = styled.div`
@@ -142,19 +143,21 @@ text-align: center;
 const OpenModal = styled.div`
 background: transparent;
 text-align: center;
-
+height: 100%;
+width: 100%;
 `;
 
 const Button = styled.button`
-border-radius: 30px;
+border-radius: 100%;
 border: none;
 margin: 0;
 text-decoration: none;
 cursor: pointer;
 text-align: center;
 background: ${props => props.theme.main};
-height: 200px;
-width: 200px;
+height: 100px;
+width: 100px;
+font-size: 2rem;
 `;
 
 const theme = {

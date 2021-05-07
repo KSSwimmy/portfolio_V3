@@ -1,18 +1,19 @@
 import styled from 'styled-components'
-import BookrImg from '../../../Portfolio_v3_images/bookr.png'
+import Xport from '../../../Portfolio_v3_images/xport.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-const Bookr = () => {
+
+const Xprot = () => {
     return (
         <Container>
-            <Title>BOOKR</Title>
+            <Title>Xport</Title>
         <ProjectContainer>
             <ProjectDisplay>
-                <img style={{width:'100%'}} src={BookrImg} alt="Bookr App" />
+                <img style={{width:'100%'}} src={Xport} alt="Xport" />
                 <Icons>
-                <a href="https://bookr.vercel.app/login" target="_blank"><FontAwesomeIcon icon="link"/></a>
-                <a href="https://github.com/BW-BookR-2019/BE" target="_blank"><FontAwesomeIcon icon={["fab", "github"]} /></a>
+                    <a href="https://admiring-euclid-0a6402.netlify.app/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+                    <a href="https://github.com/event-planner-bw-lamda-school/event-planner-UI" target="_blank"><FontAwesomeIcon icon={["fab", "github"]} /></a>
                 </Icons>
             </ProjectDisplay>
 
@@ -20,13 +21,13 @@ const Bookr = () => {
 
                 <AboutThisProjectContainer>
                     <AboutThisProject>ABOUT THIS PROJECT</AboutThisProject>
-                    <Par>Bookr is a web application that allows its users to review books. You can create an account using the register form then login with the same information. <Par></Par> After logging in, you are greeted by the book list which contains a search bar. Search through thousands of books. If the book is in stock, you can be transferred to the Google books store to buy it.<Par></Par>Clicking the book will take you to a book page with information about the specific book. Here, you can add a review on that book using the link provided. You'll be transferred to the review page where you can give the book a rating out of 5 and a written review.</Par>
+                    <Par>This app keeps track of all corporate event planning details! There are so many details and people to coordinate with. This app helps solve these problems. </Par>
                 </AboutThisProjectContainer>
 
                 <MyroleContainer>
                     <Myrole>MY ROLE</Myrole>
                     <Unordered2>
-                        <List>Backend Engineer</List>
+                        <List>User Interface Developer</List>
                         <List>User Interface Designer</List>
                     </Unordered2>
                 </MyroleContainer>
@@ -34,13 +35,10 @@ const Bookr = () => {
                 <SoftwareUsedContainer>
                     <SoftwareUsed>TECH STACK</SoftwareUsed>
                     <Unordered>
-                        <List>Java/Spring Boot</List>
-                        <List>Maven</List>
-                        <List>Hibernate</List>
-                        <List>PostgreSQL</List>
-                        <List>Swagger</List>
-                        <List>Postman</List>
-                        <List>Adobe Illustrator</List>
+                        <List>JavaScript</List>
+                        <List>HTML5</List>
+                        <List>CSS 3</List>
+                        <List>Adobe Illustrator (For UI creation)</List>
                     </Unordered>
                 </SoftwareUsedContainer>
             </DescriptionContainer1> 
@@ -179,4 +177,4 @@ margin: 0 auto;
 
 
 
-export default Bookr;
+export default Xprot;

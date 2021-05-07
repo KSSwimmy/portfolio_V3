@@ -1,6 +1,6 @@
 import Bookr from './Projects/Bookr'
 import Ori from './Projects/Ori'
-import styled, { ThemeProvider } from 'styled-components'
+import Xport from './Projects/Xport'
 
 export const data = [
     {
@@ -11,7 +11,7 @@ export const data = [
         content: <Ori />, 
     },
     {
-        content: 'This is Third modal',
+        content: <Xport />,
     },
     {
         content: 'This is Fourth modal',

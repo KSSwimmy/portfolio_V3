@@ -9,93 +9,139 @@ import Star from '../../SVG/bottomTitleStar3.svg'
 
 const IntroBottom = () => {
     return (
-        <IntroDiv> 
-           
+        <IntroDiv>
             <JobTitleContainer>
                 <JobTitleOne>
-                <img
-                        style={{width: '9%', marginRight: '15px'}}  
-                        src={Star} 
-                        alt="Star" /> 
-                   UX ENGINEER 
-                </JobTitleOne>   
+
+                  Greetings! Nice to see you. 
+               </JobTitleOne>
+
+               <JobTitleTwo> 
+
+               I am a UX Designer who also loves to code. I built and designed this site from scratch! You can also call me a UX Engineer. 
                 
-                <JobTitleTwo> 
-                <img
-                        style={{width: '9%', marginRight: '15px'}}  
-                        src={Star} 
-                        alt="Star" /> 
-                    SOFTWARE ENGINEER
                 </JobTitleTwo> 
-                    
-                <JobTitleThree> 
-                <img
-                        style={{width: '9%', marginRight: '15px'}}  
-                        src={Star} 
-                        alt="Star" /> 
-                    UI/UX DESIGNER 
-                </JobTitleThree>
             </JobTitleContainer>
-                
-          
         </IntroDiv>
     )
 }
 
-
-
 const IntroDiv = styled.div`
-position: relative;
 background: transparent;
 width: 100%;
 height: auto;
+margin: auto 0;
 display: flex;
 flex-direction: column;
-text-align: left;
-padding: 30px;
+color: #DCE3FF;
+
 
 `;
 
 const JobTitleContainer = styled.div`
 width: 100%;
+`;
+
+const JobTitleOne = styled.h3`
+text-align: left;
+font-weight: 900;
+margin: 100px 20px 20px 20px;
+color: #DCE3FF;
+font-size: 6rem;
+text-align: center;
+`;
+
+const JobTitleTwo = styled.p`
+font-size: 3.5rem;
+margin: 30px;
+margin-bottom: 100px;
+text-align: center;
+`;
+
+{/* <IntroDiv> 
+           
+           <JobTitleContainer>
+               <JobTitleOne>
+               <img
+                       style={{width: '50px', marginRight: '15px'}}  
+                       src={Star} 
+                       alt="Star" /> 
+                  UX ENGINEER
+                  <img
+                   style={{width: '50px', marginRight: '15px'}}  
+                   src={Star} 
+                   alt="Star" />  
+               </JobTitleOne>   
+                   
+               <JobTitleThree> 
+               <img
+                       style={{width: '45px', marginRight: '15px'}}  
+                       src={Star} 
+                       alt="Star" /> 
+                   UI/UX DESIGNER 
+                   <img
+                   style={{width: '50px', marginRight: '15px'}}  
+                   src={Star} 
+                   alt="Star" /> 
+               </JobTitleThree>
+           
+           </JobTitleContainer>
+
+           <JobTitleTwo> 
+               <img
+                   style={{width: '50px', marginRight: '15px'}}  
+                   src={Star} 
+                   alt="Star" /> 
+               SOFTWARE ENGINEER
+               <img
+                   style={{width: '50px', marginRight: '15px'}}  
+                   src={Star} 
+                   alt="Star" /> 
+           </JobTitleTwo> 
+       </IntroDiv>
+
+
+
+const IntroDiv = styled.div`
+background: transparent;
+width: 100%;
 height: auto;
-font-size: 4rem;
-font-weight: extra-light;
-margin-left: -5px ;
-margin-top: 90px;
+margin: auto 0;
 display: flex;
-flex-direction: column; 
-`
-
-const JobTitleThree = styled.div`
-width: 100%;
-margin: 25px 0px 25px 0px;
-color: #DCE3FF;
-display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
+justify-content: space-evenly;
+color: #DCE3FF;
+font-size: 2.5rem;
+text-align: center;
 
 `;
 
-const JobTitleTwo = styled.div`
+const JobTitleContainer = styled.div`
 width: 100%;
-margin: 25px 0px 25px 0px;
-color: #DCE3FF;
+
 display: flex;
 flex-direction: row;
-align-items: center;
-   
+justify-content: space-around;
+
 `;
 
-const JobTitleOne = styled.div`
-width: 100%;
-margin: 25px 0px 25px 0px;
-color: #DCE3FF;
-display: flex;
-flex-direction: row;
-align-items: center;
+const JobTitleThree = styled.h3`
+text-align: center;
+
 `;
 
+const JobTitleTwo = styled.h3`
+text-align: center;
+margin-top: 30px ;
+
+`;
+
+const JobTitleOne = styled.h3`
+text-align: center;
+
+`;
+ */}
 
 
 

@@ -157,7 +157,7 @@ const ParallaxEffect = () => {
           <IntroBottomContainer>
             <IntroBottom />
           </IntroBottomContainer>
-          <AboutMe />
+          {/* <AboutMe /> */}
           <ImageGalleryContainer>
             <ImageGallery />
           </ImageGalleryContainer>
@@ -177,11 +177,13 @@ max-height: 100vh;
 `;
 
 const Column = styled.div`
-margin-left: 50%;
+padding-left: 50%;
+margin: auto 0;
 display: flex;
 flex-direction: column; 
 width: 50%;
 height: 100vh;
+
 
 `;
 
@@ -199,6 +201,9 @@ width: 50%;
 const IntroBottomContainer = styled.div `
 position: relative;
 z-index: 1;
+width: 100%;
+height: auto;
+margin: auto 0;
 `;
 
 const ImageGalleryContainer = styled.div`

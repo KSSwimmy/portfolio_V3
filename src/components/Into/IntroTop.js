@@ -56,7 +56,7 @@ font-weight: bold;
 font-family: 'Exo 2', sans-serif;
 text-align: center;
 position: relative;
-margin: 50px 50px 30px 10px;
+margin-top: 50px;
 display: flex;
 justify-content: space-evenly;
 `

@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import OriImg from '../../../Portfolio_v3_images/ori.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import AboutMe from '../../AboutMe'
-//import { Link } from 'react-router-dom'
+
 
 
 const Ori = () => {
@@ -11,7 +10,7 @@ const Ori = () => {
             <Title>ORI'S GALAXY QUEST</Title>
         <ProjectContainer>
             <ProjectDisplay>
-                <img style={{width:'100%'}} src={OriImg} alt="Bookr App" />
+                <img style={{width:'100%'}} src={OriImg} alt="Ori's Galaxy Quest" />
                 <Icons>
                 <a href="https://cocky-davinci-344c63.netlify.com/" target="_blank"><FontAwesomeIcon icon="link"/></a>
                 <a href="https://github.com/BW-BookR-2019/BE" target="_blank"><FontAwesomeIcon icon={["fab", "github"]} /></a>
