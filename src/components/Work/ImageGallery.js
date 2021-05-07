@@ -114,6 +114,7 @@ const ImageGallery = () => {
 const BookrWrapper = styled.div`
 width: 100%;
 height: 100%;
+
 `;
 
 const OpenModalContainer = styled.div`
@@ -150,7 +151,7 @@ width: 100%;
 const Button = styled.button`
 border-radius: 100%;
 border: none;
-margin: 0;
+padding: 50px;
 text-decoration: none;
 cursor: pointer;
 text-align: center;

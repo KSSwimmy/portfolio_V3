@@ -17,6 +17,7 @@ import Pluto from '../SVG/pluto.svg'
 import IntroTop from './Into/IntroTop'
 import IntroBottom from './Into/IntroBottom'
 import AboutMe from './AboutMe'
+import Skills from './Skills'
 import ImageGallery from './Work/ImageGallery'
 import Form from './Form/Form'
 import styled from 'styled-components'
@@ -161,6 +162,7 @@ const ParallaxEffect = () => {
           <ImageGalleryContainer>
             <ImageGallery />
           </ImageGalleryContainer>
+          <Skills />
           <Form />
         </Column>  
       </ParallaxLayer>
@@ -178,7 +180,7 @@ max-height: 100vh;
 
 const Column = styled.div`
 padding-left: 50%;
-margin: auto 0;
+margin: 0 auto;
 display: flex;
 flex-direction: column; 
 width: 50%;
@@ -203,7 +205,7 @@ position: relative;
 z-index: 1;
 width: 100%;
 height: auto;
-margin: auto 0;
+margin: 0 auto;;
 `;
 
 const ImageGalleryContainer = styled.div`
