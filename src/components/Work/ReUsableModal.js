@@ -72,9 +72,9 @@ background-color: rgba(11,0,29,0.3);
 
 const ModalBox = styled.div `
 position: relative;
-top: 90%;
+top: 15%;
 left: 50%;
-height: 85%;
+height: auto;
 width: 85%;
 transform: translate(-50%, -50%);
 overflow-y: auto;

@@ -3,9 +3,9 @@ import ParallaxEffect from './components/ParallaxEffect'
 import styled from 'styled-components'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faLink, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faLink)
+library.add(fab, faLink, faTimes)
 
 
 
@@ -16,11 +16,11 @@ function App() {
     <AppDiv className="App">
           <ParDiv>
             <ParallaxEffect />
+            
           </ParDiv>
-      
-
-      
+          
     </AppDiv>
+    
   </AppContainer>
   );
 }
@@ -29,7 +29,7 @@ function App() {
 const ParDiv = styled.div`
 position: relative;
 position: fixed;
-z-index: 3;
+z-index: 300;
 width: 100%;
 height: 100vh;
 `;

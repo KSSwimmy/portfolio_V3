@@ -41,7 +41,8 @@ const ParallaxEffect = () => {
       
       {/* <ParallaxLayer offset={1.9} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} /> */}
 
-  
+    <FlexDiv>
+
       <Planets>
         <ParallaxLayer offset={0} 
                        speed={0.8}>
@@ -148,9 +149,11 @@ const ParallaxEffect = () => {
           src={Pluto} 
           alt="Pluto" />
         </ParallaxLayer>
+
+        
       </Planets>
 
-      <ParallaxLayer>
+      
         <Column> 
           <IntroTopContainer>
             <IntroTop /> 
@@ -163,34 +166,52 @@ const ParallaxEffect = () => {
             <ImageGallery />
           </ImageGalleryContainer>
           <Skills />
-          <Form />
         </Column>  
-      </ParallaxLayer>
-        </Parallax>
+        
+
+      </FlexDiv>
+
+        <FormDiv>
+          <ParallaxLayer offset={2}>
+              <Form />
+            </ParallaxLayer>
+            <ParallaxLayer offset={2}>
+              <AboutMe />
+            </ParallaxLayer>
+        </FormDiv>
+
+      </Parallax>
     </Page>
   );
 }
 
 const Page = styled.div`
-
 width: 100%;
-max-height: 100vh;
-
+height: 100vh;
 `;
 
+const FlexDiv = styled.div`
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: row;
+`
+
 const Column = styled.div`
-padding-left: 50%;
-margin: 0 auto;
+z-index: 100;
 display: flex;
 flex-direction: column; 
 width: 50%;
 height: 100vh;
-
-
+background: linear-gradient(180deg, rgba(0,154,205,0.26514355742296913) 0%, rgba(45,0,101,0.3743872549019608) 30%, rgba(9,0,163,0.1923144257703081) 69%, rgba(9,0,163,0) 100%);
 `;
 
+const LetsTalkDiv = styled.div`
+
+`
+
 const IntroTopContainer = styled.div `
-position: relative;
+
 z-index: 2;
 `;
 
@@ -201,7 +222,7 @@ width: 50%;
 `;
 
 const IntroBottomContainer = styled.div `
-position: relative;
+
 z-index: 1;
 width: 100%;
 height: auto;
@@ -210,8 +231,12 @@ margin: 0 auto;;
 
 const ImageGalleryContainer = styled.div`
 width: 100%;
-height: 100vh;
 z-index: 5;
 `;
+
+const FormDiv = styled.div`
+
+
+`
 
         export default ParallaxEffect;   

@@ -92,7 +92,7 @@ return (
 const MsgSpan = styled.span`
 opacity: 0;
 width: 100%;
-height: auto;
+height: 100vh;
 text-align: center;
 `;
 
@@ -102,7 +102,7 @@ color: red;
 `;
 
 const LetsTalkDiv = styled.div`
-padding-top: 200px;
+
 padding-bottom: 100px;
 font-weight: lighter;
 width: 100%;
@@ -111,7 +111,7 @@ display: flex;
 flex-direction: column;
 text-align: center;
 justify-content: space-evenly;
-background: transparent;
+
 `;
 
 

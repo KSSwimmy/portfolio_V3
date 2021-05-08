@@ -85,8 +85,7 @@ const Skills = () => {
                 </CircleDiv >
             </CenteredContainer>
 
-            <SkillDesripContainer style={{borderTopStyle: 'solid',
-                                   borderTopColor: '#DCE3FF', borderWidth: 'thin', margin: '50px'}}>
+            <SkillDesripContainer>
                 <PL>
                     <Ht>PROGRAMMING LANGUAGES</Ht>
                     <Icons>
@@ -97,14 +96,17 @@ const Skills = () => {
                         <FontAwesomeIcon icon={['fab', 'python']} />
                     </Icons>
                 </PL>
-                <Serve>
-                    <Ht>SERVICES</Ht>
-                    <li>Website Development</li>
-                    <li>Website Design</li>
-                    <li>Logos</li>
-                    <li>Corporate Identity</li>
-                    <li>Flyers, Brochures, Posters, etc</li>
-                </Serve>
+                
+                <DS>
+                    <Ht>DESIGN SOFTWARE</Ht>
+                        <Icons>
+                            <FontAwesomeIcon icon={['fab', 'html5']} />
+                            <FontAwesomeIcon icon={['fab', 'css3-alt']} />
+                            <FontAwesomeIcon icon={['fab', 'java']} />
+                            <FontAwesomeIcon icon={['fab', 'js']} />
+                            <FontAwesomeIcon icon={['fab', 'python']} />
+                        </Icons>
+                </DS>
             </SkillDesripContainer>
             
 
@@ -115,11 +117,12 @@ const Skills = () => {
 const Page = styled.div`
 width: 100%;
 height: auto;
-margin-top: 50px
+
+
 `
 const CenteredContainer = styled.div`
 text-align: center;
-margin: 0 auto;
+margin: 30px;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -153,9 +156,60 @@ text-align: center;
 margin: 0 auto;
 `
 
-const DTP = styled.div`
+const DS = styled.div`
+text-align: center;
+width: 100%;
+margin: 0 auto;
 `
 
+const Sub = styled.span`
+`
+
+const SkillsDiv = styled.h1`
+width: 100%;
+font-weight: 900;
+margin: 0 auto;
+color: #DCE3FF;
+font-size: 6rem;
+text-align: center;
+`
+const SkillsBorderDiv = styled.div`
+text-align: center;
+width: 300px;
+margin: 0 auto;
+`
+const SkillDesripContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+margin: 0 auto;
+width: 89%;
+
+`
+const PL = styled.div`
+text-align: center;
+width: 100%;
+margin: 15px;
+margin: 0 auto;
+`
+const Icons = styled.span`
+font-size: 7rem;
+width: 400px;
+text-align: center;
+margin: 0 auto;
+padding-bottom: 30px;
+display: flex;
+justify-content: space-between;
+margin-top: 50px;
+color: #DCE3FF;
+`
+
+const Ht = styled.h2`
+font-weight: 900;
+margin: 0 auto;
+
+font-size: 3.5rem;
+`
 const ArrowSpan = styled.span`
 transform: rotate(90deg); 
 
@@ -185,55 +239,6 @@ margin: 0 auto;
 const NumberDiv = styled.span`
 margin-top: 30px;
 `
-const Sub = styled.span`
-`
-
-const SkillsDiv = styled.h1`
-width: 100%;
-font-weight: 900;
-margin: 0 auto;
-color: #DCE3FF;
-font-size: 6rem;
-text-align: center;
-`
-const SkillsBorderDiv = styled.div`
-text-align: center;
-width: 300px;
-margin: 0 auto;
-`
-const SkillDesripContainer = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-`
-const PL = styled.div`
-text-align: center;
-width: 500px;
-margin: 15px;
-`
-const Icons = styled.span`
-font-size: 7rem;
-width: 400px;
-text-align: center;
-margin: 0 auto;
-display: flex;
-justify-content: space-between;
-margin-top: 50px;
-`
-
-const Serve = styled.ul`
-list-style-type: none;
-text-align: center;
-margin: 15px;
-font-size: 2.2rem;
-`
-const Ht = styled.h2`
-font-weight: 900;
-margin: 0 auto;
-color: #DCE3FF;
-font-size: 3.5rem;
-`
-
 
 
 export default Skills;

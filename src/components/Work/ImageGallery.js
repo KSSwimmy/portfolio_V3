@@ -15,27 +15,27 @@ const ImageGallery = () => {
 
     const modalContent = [
         {
-            content: 'Bookr',
+            content: '',
             style: {
-                main: "linear-gradient(115deg, rgba(252,255,0,1) 0%, rgba(255,184,0,1) 54%, rgba(242,118,0,1) 100%);"
+                main: "radial-gradient(circle, rgba(31,195,255,1) 0%, rgba(130,0,255,1) 95%);"
             }
         },
         {
-            content: 'Ori',
+            content: '',
             style: {
-                main: "linear-gradient(-35deg, rgba(158,221,0,1) 0%, rgba(0,117,52,1) 49%, rgba(1,4,0,1) 100%)"
+                main: "radial-gradient(circle, rgba(31,195,255,1) 0%, rgba(130,0,255,1) 95%);"
             }
         },
         {
-            content: 'Xport',
+            content: '',
             style: {
-                main: "linear-gradient(-144deg, rgba(85,0,193,1) 0%, rgba(99,27,135,1) 49%, rgba(30,0,48,1) 100%)"
+                main: "radial-gradient(circle, rgba(31,195,255,1) 0%, rgba(130,0,255,1) 95%);"
             }
         },
         {
-            content: 'Net-Giver',
+            content: '',
             style: {
-                main: "linear-gradient(-144deg, rgba(255,17,17,1) 0%, rgba(171,0,0,1) 49%, rgba(94,0,0,1) 100%)"
+                main: "radial-gradient(circle, rgba(31,195,255,1) 0%, rgba(130,0,255,1) 95%);"
             }
         }
     ];
