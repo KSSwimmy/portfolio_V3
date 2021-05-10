@@ -149,7 +149,6 @@ const ParallaxEffect = () => {
           src={Pluto} 
           alt="Pluto" />
         </ParallaxLayer>
-
         
       </Planets>
 
@@ -172,12 +171,14 @@ const ParallaxEffect = () => {
       </FlexDiv>
 
         <FormDiv>
-          <ParallaxLayer offset={2}>
-              <Form />
-            </ParallaxLayer>
-            <ParallaxLayer offset={2}>
+
+        <ParallaxLayer offset={2}>
               <AboutMe />
-            </ParallaxLayer>
+        </ParallaxLayer>  
+
+          <ParallaxLayer offset={2.5}>
+              <Form />
+          </ParallaxLayer>
         </FormDiv>
 
       </Parallax>
@@ -198,12 +199,13 @@ flex-direction: row;
 `
 
 const Column = styled.div`
-z-index: 100;
+z-index: 101;
 display: flex;
 flex-direction: column; 
 width: 50%;
-height: 100vh;
-background: linear-gradient(180deg, rgba(0,154,205,0.26514355742296913) 0%, rgba(45,0,101,0.3743872549019608) 30%, rgba(9,0,163,0.1923144257703081) 69%, rgba(9,0,163,0) 100%);
+height: auto;
+// background: linear-gradient(180deg, rgba(0,154,205,0.26514355742296913) 0%, rgba(45,0,101,0.3743872549019608) 30%, rgba(9,0,163,0.1923144257703081) 69%, rgba(9,0,163,0) 100%);
+background: white;
 `;
 
 const LetsTalkDiv = styled.div`
@@ -211,7 +213,7 @@ const LetsTalkDiv = styled.div`
 `
 
 const IntroTopContainer = styled.div `
-
+height: 100vh;
 z-index: 2;
 `;
 
@@ -222,7 +224,7 @@ width: 50%;
 `;
 
 const IntroBottomContainer = styled.div `
-
+height: 100vh;
 z-index: 1;
 width: 100%;
 height: auto;
@@ -232,6 +234,7 @@ margin: 0 auto;;
 const ImageGalleryContainer = styled.div`
 width: 100%;
 z-index: 5;
+height: 100vh;
 `;
 
 const FormDiv = styled.div`

@@ -92,7 +92,7 @@ return (
 const MsgSpan = styled.span`
 opacity: 0;
 width: 100%;
-height: 100vh;
+height: auto;
 text-align: center;
 `;
 
