@@ -18,7 +18,7 @@ const IntroBottom = () => {
 
                <JobTitleTwo> 
 
-               I am a UX Designer who also loves to code. I built and designed this site from scratch! You can also call me a UX Engineer. 
+               I am a UX Designer and Software Engineer. I built and designed this site from scratch! With that being said you can also call me a UX Engineer. 
                 
                 </JobTitleTwo> 
             </JobTitleContainer>
@@ -30,7 +30,7 @@ const IntroDiv = styled.div`
 background: transparent;
 width: 100%;
 height: auto;
-margin: auto 0;
+margin: 0 auto;
 display: flex;
 flex-direction: column;
 color: #DCE3FF;

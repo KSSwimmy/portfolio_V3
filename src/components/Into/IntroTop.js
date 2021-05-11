@@ -41,8 +41,6 @@ height: auto;
 text-align: center;
 display: flex;
 flex-direction: column;
-margin: 0 auto;
-
 
 
 
@@ -51,14 +49,15 @@ margin: 0 auto;
 const KimDiv = styled.div`
 width: 100%;
 height: 100px;
-font-size: 7rem;
+font-size: 8rem;
 font-weight: bold;
 font-family: 'Exo 2', sans-serif;
 text-align: center;
 position: relative;
-margin-top: 50px;
+
 display: flex;
 justify-content: space-evenly;
+margin-right: 100px;
 `
 
 const Kim = styled.h1`
@@ -78,14 +77,15 @@ position: absolute;
 
 const KimThree = styled.h1`
 width: 100%;
-top: 30px;
-left: 29px;
-color: #17135D;
+top: 25px;
+left: 20px;
+color: #631B87;
 position: absolute;
 `;
 
 const Portfolio = styled.h1`
 margin-bottom: 30px;
+margin-top: 30px;
 font-size: 7rem;
 font-weight: 200;
 font-style: italic;

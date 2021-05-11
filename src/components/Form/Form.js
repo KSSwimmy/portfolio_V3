@@ -103,7 +103,7 @@ color: red;
 
 const LetsTalkDiv = styled.div`
 
-padding-bottom: 100px;
+margin-top: 500px ;
 font-weight: lighter;
 width: 100%;
 height: auto;
