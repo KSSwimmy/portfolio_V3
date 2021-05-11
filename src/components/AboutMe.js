@@ -40,7 +40,7 @@ width: 100%;
 const AboutMeDiv = styled.div`
 height: 100vh;
 padding-bottom: 100px;
-font-weight: lighter:
+
 width: 100%;
 display: flex;
 text-align: center;
