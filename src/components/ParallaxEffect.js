@@ -170,13 +170,12 @@ const ParallaxEffect = () => {
 
       </FlexDiv>
 
-        <FormDiv>
-
-        <ParallaxLayer offset={2}>
+      <FormDiv>
+        <ParallaxLayer offset={2.2}>
               <AboutMe />
         </ParallaxLayer>  
 
-          <ParallaxLayer offset={2.5}>
+          <ParallaxLayer offset={2.9}>
               <Form />
           </ParallaxLayer>
         </FormDiv>

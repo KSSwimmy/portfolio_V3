@@ -15,9 +15,10 @@ const AboutMe = () => {
                     borderBottomColor: '#DCE3FF', borderWidth: 'thin'}}>
                     <About>ABOUT</About>
                 </AboutBorderDiv>
+
                 <TheHTwo>Hi! It's Me! Kimberly!</TheHTwo>
                 <FirstP>
-                    <p>I’m a Full Stack Software Engineer with design being my first love. I was born and raised in the PeeDee area of South Carolina, but the beat of a fast paced “Concrete Jungle” called, New York City caught my heart! I have a flair for problem solving complex problems from code to design. Being able to empathize with the user is my top priority as a designer, software engineer, and also as a person who is visually impared. I aspire to be an inspiration to people who have experienced bullying and been teased because of their differences. I want everyone (especially individuals with challenges) to know that accomplishing their goals and dreams is attainable.
+                    <p>I’m a Full Stack Software Engineer with design being my first love. I was born and raised in the PeeDee area of South Carolina, but the beat of a fast paced “Concrete Jungle” called, New York City caught my heart! I have a flair for problem solving complex problems from code to design. Being able to empathize with the user is my top priority as a designer, software engineer, and also as a person who is visually impaired. Diversity and inclusion is needed in the tech industry because it serves a plethora of people who are not the same. With that being said I feel I'd be a perfect fit on any team! 
 </p> 
                 </FirstP>
 
@@ -33,15 +34,14 @@ const AboutMe = () => {
 
 const Page = styled.div`
 width: 100%;
-height: 100vh;
+
 
 `
 const AboutMeDiv = styled.div`
-margin-top: 300px ;
+height: 100vh;
 padding-bottom: 100px;
 font-weight: lighter:
 width: 100%;
-height: auto;
 display: flex;
 text-align: center;
 justify-content: space-evenly;
