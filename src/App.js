@@ -16,7 +16,6 @@ function App() {
     <AppDiv className="App">
           <ParDiv>
             <ParallaxEffect />
-            
           </ParDiv>
           
     </AppDiv>
@@ -31,21 +30,21 @@ position: relative;
 position: fixed;
 z-index: 300;
 width: 100%;
-height: 100vh;
+height: 100vh ;
 `;
 
 const AppContainer = styled.div`
 margin: 0 auto;
-min-height: 100vh;
+height: auto;
 width: 100%;
 `;
 
 const AppDiv = styled.div`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: row;
+margin: 0 auto;
 `;
 
 

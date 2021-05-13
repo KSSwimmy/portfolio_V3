@@ -176,11 +176,13 @@ margin: 40px;
 
 const Input = styled.input`
 font-size: 3.5rem;
+padding: 10px 20px 10px 20px;
 width: 50%;
 height: 70px;
 border-radius: 60px;
 margin: 40px;
 font-family: 'Open Sans', sans-serif;
+background: #DCE3FF;
 `;
 
 const SubmitButton = styled.button`
@@ -199,10 +201,12 @@ border-width: thin;
 const Textarea = styled.textarea`
 height: 10em;
 width: 70%;
+padding: 30px;
 border-radius: 60px;
 font-size: 3.5rem;
 font-family: 'Open Sans', sans-serif;
 margin: 0 auto 40px;
+background: #DCE3FF;
 `;
 
 init('user_RGchjDEpAojOiC34MHwys')
