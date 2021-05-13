@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 import BookrImg from '../../../Portfolio_v3_images/bookr.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import ReUsableModal from '../ReUsableModal'
 
 
 const Bookr = () => {
     return (
         <Container>
+            
             <Title>BOOKR</Title>
         <ProjectContainer>
             <ProjectDisplay>
@@ -51,13 +53,15 @@ const Bookr = () => {
     )
 }
 
+
+
 const Container = styled.div`
 width: 100%;
 height: auto;
 display: flex;
 flex-direction: column;
 text-align: center;
-
+margin: 0 auto;
 `;
 
 const ProjectContainer = styled.div`
@@ -67,17 +71,30 @@ width: 100%;
 height: auto;
 margin-top: 55px;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+
+    }
 `;
 
 const Title = styled.h1`
 font-weight: 900;
 color: #DCE3FF;
-font-size: 6rem;
+font-size: 7rem;
 text-align: center;
 padding-bottom: 5px;
 border-bottom: solid #DCE3FF;
 border-width: thin; 
 text-align: center;
+
+    @media (max-width: 768px) {
+        margin: 0 auto;
+        width: 100%;
+        
+        
+    }
 `;
 
 const ProjectDisplay = styled.div`
@@ -86,24 +103,39 @@ height: auto;
 padding: 50px;
 border-right: solid #DCE3FF;
 border-width: thin;
+
+    @media (max-width: 768px) {
+        margin: 50px 0 auto;
+        padding: 0;
+        width: 100%;
+        border: none;
+
+    }
 `;
 
 const AboutThisProjectContainer = styled.div`
-font-size: 2.5rem;
+font-size: 3.5rem;
 color: #DCE3FF;
 text-align: left;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
+
+    @media (max-width: 768px) {
+        width:100% ;
+        text-align: center;
+        margin: 0 auto;
+    }
 `;
 
 const Par = styled.p`
 margin: 40px; 
+
 `;
 
 const AboutThisProject = styled.h3`
 text-align: center;
 font-weight: 900;
-font-size: 3rem;
+font-size: 3.5rem;
 margin-bottom: 50px;
 `;
 
@@ -117,23 +149,40 @@ display: flex;
 justify-content: space-between;
 margin-top: 100px;
 text-decoration: none;
+
+    @media (max-width: 768px) {
+        font-size: 7rem;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: 0 auto;
+        padding: 40px;
+
+    }
 `;
 
 const MyroleContainer = styled.div`
 width: 100%;
 display: flex;
 flex-direction: column;
+
+@media (max-width: 768px) {
+    width:100% ;
+    text-align: center;
+    margin: 0 auto;
+}
 `;
 
 const Myrole = styled.h3`
 text-align: center;
 font-weight: 900;
-font-size: 3rem;
+font-size: 3.5rem;
 margin-bottom: 30px;
 `
 
 const Unordered = styled.ul`
-font-size: 2.5rem;
+font-size: 3.5rem;
 color: #DCE3FF;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
@@ -142,7 +191,7 @@ margin-bottom: 50px;
 `;
 
 const Unordered2 = styled.ul`
-font-size: 2.5rem;
+font-size: 3.5rem;
 color: #DCE3FF;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
@@ -166,6 +215,10 @@ display: flex;
 flex-direction: column;
 width: 50%;
 
+    @media (max-width: 768px) {
+        margin: 0 auto;
+        width: 100%;
+    }
 `;
 
 const SoftwareUsedContainer = styled.div`

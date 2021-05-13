@@ -1,5 +1,6 @@
 import React, { forwardRef, useImperativeHandle } from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 // In order to use a ref in a functional component, forwardRef() must be used. 
@@ -39,6 +40,9 @@ const ReUsableModal = forwardRef(
             <ModalWrapper>
                 <ModalBackdrop onClick={close}/>
                 <ModalBox>
+                <CloseX onClick={close}>
+                    <FontAwesomeIcon icon="times" />  
+                </CloseX>
                     {modalData.content}
                     
                 </ModalBox>
@@ -52,6 +56,17 @@ const ReUsableModal = forwardRef(
     }
 )
 
+const CloseX = styled.button`
+font-size: 7rem;
+color: #DCE3FF;
+font-size: 6rem;
+float: right;
+display: inline-block;
+padding: 2px 5px;
+background: transparent;
+cursor: pointer;
+border: none;
+`;
 
 const ModalWrapper = styled.div `
 position: fixed;
@@ -72,7 +87,7 @@ background-color: rgba(11,0,29,0.3);
 
 const ModalBox = styled.div `
 position: relative;
-top: 15%;
+top: 20%;
 left: 50%;
 height: auto;
 width: 85%;
@@ -83,6 +98,10 @@ background: rgb(22,0,57);
 box-shadow: 0 0 17px rgba(0,0,0,0.30);
 z-index: 101;
 padding: 40px;
+@media (max-width: 768px) {
+    top: 55%;
+    height: ;
+}
 `;
 
 

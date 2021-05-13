@@ -70,7 +70,7 @@ margin-top: 55px;
 const Title = styled.h1`
 font-weight: 900;
 color: #DCE3FF;
-font-size: 6rem;
+font-size: 7rem;
 text-align: center;
 padding-bottom: 5px;
 border-bottom: solid #DCE3FF;
@@ -87,7 +87,7 @@ border-width: thin;
 `;
 
 const AboutThisProjectContainer = styled.div`
-font-size: 2.5rem;
+font-size: 3.5rem;
 color: #DCE3FF;
 text-align: left;
 font-family: 'Open Sans', sans-serif;
@@ -101,7 +101,7 @@ margin: 40px;
 const AboutThisProject = styled.h3`
 text-align: center;
 font-weight: 900;
-font-size: 3rem;
+font-size: 3.5rem;
 margin-bottom: 50px;
 `;
 
@@ -126,12 +126,12 @@ flex-direction: column;
 const Myrole = styled.h3`
 text-align: center;
 font-weight: 900;
-font-size: 3rem;
+font-size: 3.5rem;
 margin-bottom: 30px;
 `
 
 const Unordered = styled.ul`
-font-size: 2.5rem;
+font-size: 3.5rem;
 color: #DCE3FF;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
@@ -140,7 +140,7 @@ margin-bottom: 50px;
 `;
 
 const Unordered2 = styled.ul`
-font-size: 2.5rem;
+font-size: 3.5rem;
 color: #DCE3FF;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
@@ -173,7 +173,6 @@ flex-direction: column;
 margin: 0 auto;
 
 `;
-
 
 
 

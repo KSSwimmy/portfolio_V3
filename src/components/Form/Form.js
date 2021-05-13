@@ -114,12 +114,14 @@ width: 100%;
 height: auto;
 text-align: center;
 font-family: 'Open Sans', sans-serif;
+font-size: 6rem;
 `;
 
 const MsgSpan2 = styled.span`
 width: 100%;
 height: auto;
 text-align: center;
+font-weight: 900;
 color: red;
 font-family: 'Open Sans', sans-serif;
 `;
