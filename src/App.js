@@ -30,7 +30,7 @@ function App() {
 }
 
 const ParDivMobile = styled.div`
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   position: relative;
   position: fixed;
   z-index: 300;
