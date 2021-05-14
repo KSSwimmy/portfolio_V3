@@ -134,8 +134,7 @@ flex-direction: row;
 const LetsTalkBorderDiv = styled.div`
 text-align: center;
 width: 300px;
-margin: 0 auto 40px;
-width: 25%;
+margin: 0 auto;
 `
 
 const InputDiv2 = styled.div`

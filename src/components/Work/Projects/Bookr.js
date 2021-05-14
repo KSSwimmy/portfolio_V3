@@ -129,7 +129,10 @@ font-weight: lighter;
 
 const Par = styled.p`
 margin: 40px; 
-
+font-size: 3.5rem;
+color: #DCE3FF;
+font-family: 'Open Sans', sans-serif;
+font-weight: lighter;
 `;
 
 const AboutThisProject = styled.h3`

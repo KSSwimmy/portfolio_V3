@@ -31,13 +31,13 @@ const ParallaxEffect = () => {
   return (
 
     <Page>
-    <Parallax className="layer" pages={15} ref={ref => parallax = ref}>
+    <Parallax className="layer" pages={12} ref={ref => parallax = ref}>
 
       {/* background color */}
-      <ParallaxLayer offset={0} factor={15} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
+      <ParallaxLayer offset={0} factor={12} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
       
       <ParallaxLayer offset={0} factor={7} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
-      <ParallaxLayer offset={0} speed={0.3} factor={3} style={{ backgroundImage: `url(${LandingPageBiggerStars})`, backgroundSize: 'cover' }} />
+      <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: `url(${LandingPageBiggerStars})`, backgroundSize: 'cover' }} />
       
       {/* <ParallaxLayer offset={1.9} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} /> */}
 
@@ -182,21 +182,16 @@ const ParallaxEffect = () => {
             </SkillContainer>
           </ParallaxLayer>
 
+          <ParallaxLayer offset={6.3}>
+            <AboutMe />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={7.7}>
+            <Form />
+          </ParallaxLayer>
         </ParallaxLayer> 
         </Column>    
         
-
-
-
-      <FormDiv>
-        <ParallaxLayer offset={3.2}>
-              <AboutMe />
-        </ParallaxLayer>  
-
-          <ParallaxLayer offset={5.3}>
-              <Form />
-          </ParallaxLayer>
-        </FormDiv>
 
       </Parallax>
     </Page>

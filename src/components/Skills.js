@@ -175,8 +175,7 @@ text-align: center;
 const SkillsBorderDiv = styled.div`
 text-align: center;
 width: 300px;
-margin: 0 auto 40px;
-width: 25%;
+margin: 0 auto;
 `
 const SkillDesripContainer = styled.div`
 display: flex;
