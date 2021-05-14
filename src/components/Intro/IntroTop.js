@@ -33,7 +33,6 @@ const IntroTop = () => {
 
 
 const IntroDiv = styled.div`
-position: relative;
 background: transparent;
 padding: 40px;
 width: 97%;
@@ -42,6 +41,11 @@ text-align: center;
 display: flex;
 flex-direction: column;
 margin: 40px 0 auto;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        
+    }
 `;
 
 const KimDiv = styled.div`
@@ -53,6 +57,11 @@ font-family: 'Exo 2', sans-serif;
 text-align: center;
 position: relative;
 margin: 0 auto;
+    @media (max-width: 768px) {
+        font-size: 6rem;
+        width: 100%;
+        left: -40px;
+    }
 `;
 
 const Kim = styled.h1`
@@ -80,14 +89,24 @@ position: absolute;
 margin: 0 auto;
 `;
 
-const Portfolio = styled.h1`
+const Portfolio = styled.div`
 margin: 0 auto 30px;
 padding-top: 30px;
 font-size: 7rem;
 font-weight: 200;
 font-style: italic;
 color: #DCE3FF;
-font-family: 'Exo 2', sans-serif;  
+font-family: 'Exo 2', sans-serif; 
+
+    @media (max-width: 768px) {
+        font-size: 5rem;
+        text-align: center;
+        margin-left: 24%;
+        
+        
+        
+       
+    }
 `;
 
 

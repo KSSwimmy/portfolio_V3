@@ -1,5 +1,6 @@
 import './index.css';
 import ParallaxEffect from './components/ParallaxEffect'
+import MobileParallaxEffect from './components/MobileParallaxEffect'
 import styled from 'styled-components'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -17,6 +18,10 @@ function App() {
           <ParDiv>
             <ParallaxEffect />
           </ParDiv>
+
+          <ParDivMobile>
+            <MobileParallaxEffect />
+          </ParDivMobile>
           
     </AppDiv>
     
@@ -24,6 +29,16 @@ function App() {
   );
 }
 
+const ParDivMobile = styled.div`
+@media (max-width: 768px) {
+  position: relative;
+  position: fixed;
+  z-index: 300;
+  width: 100%;
+  height: 100vh ;
+  
+}
+`
 
 const ParDiv = styled.div`
 position: relative;
@@ -31,6 +46,11 @@ position: fixed;
 z-index: 300;
 width: 100%;
 height: 100vh ;
+
+@media (max-width: 768px) {
+  width:100% ;
+  display: none;
+}
 `;
 
 const AppContainer = styled.div`

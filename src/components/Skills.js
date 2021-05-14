@@ -9,15 +9,13 @@ const Skills = () => {
     <Page>
             
             <CenteredContainer>
-                <TitleContainer>
+                
                     <SkillsBorderDiv 
                         style={{borderBottomStyle: 'solid',
                         borderBottomColor: '#DCE3FF', borderWidth: 'thin'}}>
                         <SkillsDiv>SKILLS</SkillsDiv>
                     </SkillsBorderDiv>
                     <SubtDiv>MY DEVELOPMENT PROCESS</SubtDiv>
-
-                </TitleContainer>
 
                     <CircleDiv>
                     <Circles>
@@ -121,9 +119,11 @@ height: auto;
 
 `
 const CenteredContainer = styled.div`
-text-align: center;
-margin: 30px;
+padding-top: 50px;
+padding-bottom: 100px;
+height: 500px;
 width: 100%;
+height: auto;
 display: flex;
 flex-direction: column;
 
@@ -166,7 +166,6 @@ const Sub = styled.span`
 `
 
 const SkillsDiv = styled.h1`
-width: 100%;
 font-weight: 900;
 margin: 0 auto;
 color: #DCE3FF;
@@ -176,7 +175,8 @@ text-align: center;
 const SkillsBorderDiv = styled.div`
 text-align: center;
 width: 300px;
-margin: 0 auto;
+margin: 0 auto 40px;
+width: 25%;
 `
 const SkillDesripContainer = styled.div`
 display: flex;
