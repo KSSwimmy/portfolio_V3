@@ -57,8 +57,8 @@ font-family: 'Exo 2', sans-serif;
 text-align: center;
 position: relative;
 margin: 0 auto;
-    @media (max-width: 768px) {
-        font-size: 6rem;
+    @media (max-width: 800px) {
+        font-size: 7rem;
         width: 100%;
         left: -40px;
     }
@@ -98,7 +98,7 @@ font-style: italic;
 color: #DCE3FF;
 font-family: 'Exo 2', sans-serif; 
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         font-size: 5rem;
         text-align: center;
         margin-left: 24%;
