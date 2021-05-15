@@ -1,5 +1,5 @@
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
-
+import { device } from './../device'
 import TheSun from '../SVG/sun.svg'
 import Earth from '../SVG/earth.svg'
 import Jupiter from '../SVG/jupiter.svg'
@@ -159,37 +159,39 @@ const ParallaxEffect = () => {
 
       
       <Column>
-     <ParallaxLayer speed={0}>
-        <ParallaxLayer offset={0}>
+    
+       
               <IntroTop /> 
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={2.5}>
-            <IntroBottomContainer>
+         
+            <MarginDiv>
+          
+            
               <IntroBottom />
-            </IntroBottomContainer>
-          </ParallaxLayer>
+           
+         
 
-          <ParallaxLayer offset={3.3}>
-              <ImageGalleryContainer>
+          
+              
                 <ImageGallery />
-              </ImageGalleryContainer>
-          </ParallaxLayer> 
+             
+        
 
-          <ParallaxLayer offset={3.7}>
-            <SkillContainer>
+          
+           
               <Skills />
-            </SkillContainer>
-          </ParallaxLayer>
+           
+         
 
-          <ParallaxLayer offset={6.3}>
+          
             <AboutMe />
-          </ParallaxLayer>
+          
 
-          <ParallaxLayer offset={7.7}>
-            <Form />
-          </ParallaxLayer>
-        </ParallaxLayer> 
+            <FormDiv>
+              <Form />
+            </FormDiv> 
+
+          </MarginDiv>
+       
         </Column>    
         
 
@@ -199,16 +201,21 @@ const ParallaxEffect = () => {
 }
 
 const Page = styled.div`
-  @media (max-width: 800px) {
+  @media ${device.tablet} {
     width:100% ;
     margin: 0 auto;
-    
+    height: 100vh;
   }
 `;
 
-const FlexDiv = styled.div`
-width: 100%;
-height: 100vh;
+const MarginDiv = styled.div`
+
+
+
+@media ${device.mobileS} {
+  Margin-top: 1200px;
+}
+
 
 `
 
@@ -218,7 +225,7 @@ z-index: 101;
 display: flex;
 flex-direction: column; 
 width: 100%;
-height: 2500px;
+height: auto;
 //background: linear-gradient(180deg, rgba(0,154,205,0.26514355742296913) 0%, rgba(45,0,101,0.3743872549019608) 30%, rgba(9,0,163,0.1923144257703081) 69%, rgba(9,0,163,0) 100%);
   
 
@@ -259,8 +266,11 @@ z-index: 5;
 `;
 
 const FormDiv = styled.div`
-z-index: 301;
-width: 100%;
+@media ${device.mobileL} {
+  margin-top: 1210px;
+}
+
+
 `
 
         export default ParallaxEffect;   

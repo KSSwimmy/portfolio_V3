@@ -1,4 +1,5 @@
 import './index.css';
+import { device } from './device'
 import ParallaxEffect from './components/ParallaxEffect'
 import MobileParallaxEffect from './components/MobileParallaxEffect'
 import styled from 'styled-components'
@@ -30,15 +31,19 @@ function App() {
 }
 
 const ParDivMobile = styled.div`
-@media (max-width: 800px) {
+@media ${device.tablet} {
+  
   position: relative;
   position: fixed;
   z-index: 300;
   width: 100%;
   height: 100vh ;
   
-}
-`
+};
+
+
+
+`;
 
 const ParDiv = styled.div`
 position: relative;
@@ -47,10 +52,12 @@ z-index: 300;
 width: 100%;
 height: 100vh ;
 
-@media (max-width: 768px) {
-  width:100% ;
+@media ${device.tablet} {
   display: none;
 }
+
+
+
 `;
 
 const AppContainer = styled.div`
