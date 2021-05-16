@@ -31,7 +31,7 @@ function App() {
 }
 
 const ParDivMobile = styled.div`
-@media ${device.tablet} {
+@media ${device.iPad} {
   
   position: relative;
   position: fixed;
@@ -52,7 +52,7 @@ z-index: 300;
 width: 100%;
 height: 100vh ;
 
-@media ${device.tablet} {
+@media ${device.iPad} {
   display: none;
 }
 

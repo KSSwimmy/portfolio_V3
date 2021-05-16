@@ -98,7 +98,7 @@ font-style: italic;
 color: #DCE3FF;
 font-family: 'Exo 2', sans-serif; 
 
-@media ${device.tablet} {
+@media ${device.iPad} {
     
     font-size: 5rem;
     text-align: center;

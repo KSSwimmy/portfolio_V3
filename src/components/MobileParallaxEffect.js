@@ -186,9 +186,9 @@ const ParallaxEffect = () => {
             <AboutMe />
           
 
-            <FormDiv>
+            
               <Form />
-            </FormDiv> 
+            
 
           </MarginDiv>
        
@@ -201,7 +201,7 @@ const ParallaxEffect = () => {
 }
 
 const Page = styled.div`
-  @media ${device.tablet} {
+  @media ${device.iPad} {
     width:100% ;
     margin: 0 auto;
     height: 100vh;
@@ -209,11 +209,8 @@ const Page = styled.div`
 `;
 
 const MarginDiv = styled.div`
-
-
-
-@media ${device.mobileS} {
-  Margin-top: 1200px;
+@media ${device.iPad} {
+  Margin-top: 150em;
 }
 
 
@@ -230,7 +227,7 @@ height: auto;
   
 
     
-  }
+
 `;
 
 
@@ -267,7 +264,7 @@ z-index: 5;
 
 const FormDiv = styled.div`
 @media ${device.mobileL} {
-  margin-top: 1210px;
+  margin-top: 200em;
 }
 
 
