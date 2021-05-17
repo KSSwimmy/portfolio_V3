@@ -49,7 +49,7 @@ margin: 40px 0 auto;
 `;
 
 const KimDiv = styled.div`
-width: 85%;
+width: 100%;
 height: 100px;
 font-size: 8rem;
 font-weight: bold;
