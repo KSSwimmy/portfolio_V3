@@ -42,7 +42,7 @@ display: flex;
 flex-direction: column;
 margin: 40px 0 auto;
 
-    @media (max-width: 768px) {
+    @media ${device.iPad} {
         width: 100%;
         
     }
@@ -57,11 +57,20 @@ font-family: 'Exo 2', sans-serif;
 text-align: center;
 position: relative;
 margin: 0 auto;
-    @media (max-width: 800px) {
+
+    @media ${device.iPad} {
         font-size: 7rem;
         width: 100%;
         left: -40px;
     }
+
+    @media ${device.pixel2XL} {
+        margin-top: 3em;
+        font-size: 6rem;
+        width: 100%;
+        left: -40px;
+    }
+
 `;
 
 const Kim = styled.h1`
