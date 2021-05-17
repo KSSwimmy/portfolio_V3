@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import BookrImg from '../../../Portfolio_v3_images/bookr.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import ReUsableModal from '../ReUsableModal'
+import { device } from  '../../../device'
 
 
 const Bookr = () => {
@@ -71,7 +71,7 @@ width: 100%;
 height: auto;
 margin-top: 55px;
 
-    @media (max-width: 768px) {
+    @media ${device.iPad} {
         flex-direction: column;
         margin: 0 auto;
         width: 100%;
@@ -89,7 +89,7 @@ border-bottom: solid #DCE3FF;
 border-width: thin; 
 text-align: center;
 
-    @media (max-width: 768px) {
+    @media ${device.iPad} {
         margin: 0 auto;
         width: 100%;
         
@@ -104,7 +104,7 @@ padding: 50px;
 border-right: solid #DCE3FF;
 border-width: thin;
 
-    @media (max-width: 768px) {
+    @media ${device.iPad} {
         margin: 50px 0 auto;
         padding: 0;
         width: 100%;
@@ -120,7 +120,7 @@ text-align: left;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
 
-    @media (max-width: 768px) {
+    @media ${device.iPad} {
         width:100% ;
         text-align: center;
         margin: 0 auto;
@@ -153,7 +153,7 @@ justify-content: space-between;
 margin-top: 100px;
 text-decoration: none;
 
-    @media (max-width: 768px) {
+    @media ${device.iPad} {
         font-size: 7rem;
         text-align: center;
         display: flex;
@@ -170,7 +170,7 @@ width: 100%;
 display: flex;
 flex-direction: column;
 
-@media (max-width: 768px) {
+@media ${device.iPad} {
     width:100% ;
     text-align: center;
     margin: 0 auto;
@@ -218,7 +218,7 @@ display: flex;
 flex-direction: column;
 width: 50%;
 
-    @media (max-width: 768px) {
+    @media ${device.iPad} {
         margin: 0 auto;
         width: 100%;
     }

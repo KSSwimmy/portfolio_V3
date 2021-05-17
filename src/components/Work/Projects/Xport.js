@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Xport from '../../../Portfolio_v3_images/xport.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { device } from  '../../../device'
 
 
 const Xprot = () => {
@@ -55,7 +55,7 @@ height: auto;
 display: flex;
 flex-direction: column;
 text-align: center;
-
+margin: 0 auto;
 `;
 
 const ProjectContainer = styled.div`
@@ -65,6 +65,12 @@ width: 100%;
 height: auto;
 margin-top: 55px;
 
+    @media ${device.iPad} {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+
+    }
 `;
 
 const Title = styled.h1`
@@ -76,6 +82,13 @@ padding-bottom: 5px;
 border-bottom: solid #DCE3FF;
 border-width: thin; 
 text-align: center;
+
+    @media ${device.iPad} {
+        margin: 0 auto;
+        width: 100%;
+        
+        
+    }
 `;
 
 const ProjectDisplay = styled.div`
@@ -84,6 +97,14 @@ height: auto;
 padding: 50px;
 border-right: solid #DCE3FF;
 border-width: thin;
+
+    @media ${device.iPad} {
+        margin: 50px 0 auto;
+        padding: 0;
+        width: 100%;
+        border: none;
+
+    }
 `;
 
 const AboutThisProjectContainer = styled.div`
@@ -92,10 +113,20 @@ color: #DCE3FF;
 text-align: left;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
+
+    @media ${device.iPad} {
+        width:100% ;
+        text-align: center;
+        margin: 0 auto;
+    }
 `;
 
 const Par = styled.p`
 margin: 40px; 
+font-size: 3.5rem;
+color: #DCE3FF;
+font-family: 'Open Sans', sans-serif;
+font-weight: lighter;
 `;
 
 const AboutThisProject = styled.h3`
@@ -115,12 +146,29 @@ display: flex;
 justify-content: space-between;
 margin-top: 100px;
 text-decoration: none;
+
+    @media ${device.iPad} {
+        font-size: 7rem;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: 0 auto;
+        padding: 40px;
+
+    }
 `;
 
 const MyroleContainer = styled.div`
 width: 100%;
 display: flex;
 flex-direction: column;
+
+@media ${device.iPad} {
+    width:100% ;
+    text-align: center;
+    margin: 0 auto;
+}
 `;
 
 const Myrole = styled.h3`
@@ -164,6 +212,10 @@ display: flex;
 flex-direction: column;
 width: 50%;
 
+    @media ${device.iPad} {
+        margin: 0 auto;
+        width: 100%;
+    }
 `;
 
 const SoftwareUsedContainer = styled.div`
@@ -173,7 +225,6 @@ flex-direction: column;
 margin: 0 auto;
 
 `;
-
 
 
 export default Xprot;

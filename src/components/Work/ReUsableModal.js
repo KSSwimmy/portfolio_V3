@@ -1,7 +1,7 @@
 import React, { forwardRef, useImperativeHandle } from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { device } from '../../device'
 
 // In order to use a ref in a functional component, forwardRef() must be used. 
 
@@ -80,7 +80,7 @@ const ModalBackdrop = styled.div `
 position: fixed;
 padding: 100%;
 width: 100%;
-height: 100vh;
+height: 100%;
 z-index: 100;
 background-color: rgba(11,0,29,0.3);
 `;
@@ -98,9 +98,9 @@ background: rgb(22,0,57);
 box-shadow: 0 0 17px rgba(0,0,0,0.30);
 z-index: 101;
 padding: 40px;
-@media (max-width: 768px) {
-    top: 55%;
-    height: ;
+@media ${device.iPad} {
+    top: 230em;
+    height: 10%;
 }
 `;
 
