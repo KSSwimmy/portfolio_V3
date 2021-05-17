@@ -86,6 +86,7 @@ const ImageGallery = () => {
                 borderWidth: 'thin'}}>
                 <Work>WORK</Work>
             </WorkBorderDiv>
+            <SubtDiv>SOFTWARE ENGINEERING</SubtDiv>
 
         <ThemeProvider theme={theme}>
             <OpenModalContainer>
@@ -131,6 +132,16 @@ const WorkBorderDiv = styled.div`
 text-align: center;
 width: 300px;
 margin: 0 auto;
+`;
+
+const SubtDiv = styled.h2`
+font-weight: 900;
+margin-top: 30px;
+margin-bottom: 30px;
+color: #DCE3FF;
+font-size: 3.5rem;
+text-align: center;
+
 `;
 
 const Work = styled.h1`
