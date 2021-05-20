@@ -2,11 +2,12 @@ import './index.css';
 import { device } from './device'
 import ParallaxEffect from './components/ParallaxEffect'
 import MobileParallaxEffect from './components/MobileParallaxEffect'
+import UnderConstruction from './components/UnderConstruction'
 import styled from 'styled-components'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faLink, faTimes } from '@fortawesome/free-solid-svg-icons'
-
+import IntroTop from './components/Intro/IntroTop'
 library.add(fab, faLink, faTimes)
 
 
@@ -24,6 +25,8 @@ function App() {
             <MobileParallaxEffect />
           </ParDivMobile>
           
+          <UnderConstruction />
+          
     </AppDiv>
     
   </AppContainer>
@@ -32,7 +35,7 @@ function App() {
 
 const ParDivMobile = styled.div`
 @media ${device.iPad} {
-  
+  display: none;
   position: relative;
   position: fixed;
   z-index: 300;
@@ -51,7 +54,7 @@ position: fixed;
 z-index: 300;
 width: 100%;
 height: 100vh ;
-
+display: none;
 @media ${device.iPad} {
   display: none;
 }

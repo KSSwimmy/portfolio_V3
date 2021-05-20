@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled  from 'styled-components'
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
+import { device } from '../../device'
 
 
 
@@ -129,17 +130,28 @@ font-family: 'Open Sans', sans-serif;
 const InputDiv1 = styled.div`
 display: flex;
 flex-direction: row;
+
+@media ${device.iPad} {
+  flex-direction: column;
+}
 `;
 
 const LetsTalkBorderDiv = styled.div`
 text-align: center;
 width: 300px;
 margin: 0 auto;
+
 `
+
 
 const InputDiv2 = styled.div`
 display: flex;
 flex-direction: row;
+
+@media ${device.iPad} {
+  flex-direction: column;
+  margin: 0 auto;
+}
 `
 
 
@@ -151,6 +163,10 @@ display: flex;
 flex-direction: column;
 text-align: center;
 justify-content: space-around;
+
+@media ${device.iPad} {
+  Margin-top: 109em;
+}
 `;
 
 const LetsTalk = styled.h1`
