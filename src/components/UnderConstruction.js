@@ -16,6 +16,8 @@ import Uranus from '../SVG/uranus.svg'
 import Pluto from '../SVG/pluto.svg'
 import styled from 'styled-components'
 import { device } from '../device'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 //functional component
@@ -160,11 +162,23 @@ const ParallaxEffect = () => {
           alt="Pluto" />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.3} 
+        <ParallaxLayer offset={2.2} 
                        speed={1}>
         <Kim> 
             CHECK BACK LATER! SEE YOU SOON! 
         </Kim>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={2.7} 
+                       speed={1}>
+        
+        <Icons>
+        <a href="https://www.linkedin.com/in/kss89/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "linkedin"]} /></a>  
+        <a href="https://twitter.com/ksswimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "twitter"]} /></a>  
+        <a href="https://github.com/KSSwimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "github"]} /></a>  
+        <a href="https://dribbble.com/KSwimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "dribbble"]} /></a>  
+        </Icons>
+
         </ParallaxLayer>
         
     </Parallax> 
@@ -185,6 +199,21 @@ margin-top: 15px;
   }
 `;
 
+const Icons = styled.div`
+color: #DCE3FF;
+font-size: 10rem;
+width: 500px;
+text-align: center;
+display: flex;
+justify-content: space-around;
+text-decoration: none;
 
+@media ${device.iPad} {
+   
+    width: 100%;
+    font-size: 5rem;
+    
+}
+`;
 
 export default ParallaxEffect; 

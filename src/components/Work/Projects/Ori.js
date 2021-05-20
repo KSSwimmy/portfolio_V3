@@ -12,8 +12,8 @@ const Ori = () => {
             <ProjectDisplay>
                 <img style={{width:'100%'}} src={OriImg} alt="Ori's Galaxy Quest" />
                 <Icons>
-                <a href="https://cocky-davinci-344c63.netlify.com/" target="_blank"><FontAwesomeIcon icon="link"/></a>
-                <a href="https://github.com/BW-BookR-2019/BE" target="_blank"><FontAwesomeIcon icon={["fab", "github"]} /></a>
+                <a href="https://cocky-davinci-344c63.netlify.com/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon="link"/></a>
+                <a href="https://github.com/BW-BookR-2019/BE" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "github"]} /></a>
                 </Icons>
             </ProjectDisplay>
 

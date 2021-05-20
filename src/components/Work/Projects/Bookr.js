@@ -13,8 +13,8 @@ const Bookr = () => {
             <ProjectDisplay>
                 <img style={{width:'100%'}} src={BookrImg} alt="Bookr App" />
                 <Icons>
-                <a href="https://bookr.vercel.app/login" target="_blank"><FontAwesomeIcon icon="link"/></a>
-                <a href="https://github.com/BW-BookR-2019/BE" target="_blank"><FontAwesomeIcon icon={["fab", "github"]} /></a>
+                <a href="https://bookr.vercel.app/login" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon="link"/></a>
+                <a href="https://github.com/BW-BookR-2019/BE" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "github"]} /></a>
                 </Icons>
             </ProjectDisplay>
 
