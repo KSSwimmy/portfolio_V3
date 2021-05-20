@@ -15,7 +15,7 @@ import Neptune from '../SVG/neptune.svg'
 import Uranus from '../SVG/uranus.svg'
 import Pluto from '../SVG/pluto.svg'
 import styled from 'styled-components'
-
+import { device } from '../device'
 
 
 //functional component
@@ -180,7 +180,9 @@ font-weight: bold;
 font-family: 'Exo 2', sans-serif;
 text-align: center;
 margin-top: 15px;
-
+@media ${device.iPad} {
+    font-size: 5rem;
+  }
 `;
 
 
