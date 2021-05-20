@@ -7,7 +7,6 @@ import styled from 'styled-components'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faLink, faTimes } from '@fortawesome/free-solid-svg-icons'
-import IntroTop from './components/Intro/IntroTop'
 library.add(fab, faLink, faTimes)
 
 
