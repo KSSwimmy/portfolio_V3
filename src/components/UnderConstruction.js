@@ -171,7 +171,8 @@ const ParallaxEffect = () => {
 
         <ParallaxLayer offset={2.7} 
                        speed={1}>
-        
+    
+
         <Icons>
         <a href="https://www.linkedin.com/in/kss89/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "linkedin"]} /></a>  
         <a href="https://twitter.com/ksswimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "twitter"]} /></a>  
@@ -194,6 +195,7 @@ font-weight: bold;
 font-family: 'Exo 2', sans-serif;
 text-align: center;
 margin-top: 15px;
+
 @media ${device.iPad} {
     font-size: 5rem;
   }
@@ -202,16 +204,16 @@ margin-top: 15px;
 const Icons = styled.div`
 color: #DCE3FF;
 font-size: 10rem;
-width: 500px;
+width: 700px;
 text-align: center;
 display: flex;
 justify-content: space-around;
 text-decoration: none;
+margin: 0 auto;
 
 @media ${device.iPad} {
-   
     width: 100%;
-    font-size: 5rem;
+    font-size: 7rem;
     
 }
 `;

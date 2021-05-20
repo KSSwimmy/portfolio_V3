@@ -21,6 +21,7 @@ import Skills from './Skills'
 import ImageGallery from './Work/ImageGallery'
 import Form from './Form/Form'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -31,10 +32,10 @@ const ParallaxEffect = () => {
   return (
 
     <Page>
-    <Parallax className="layer" pages={5.5} ref={ref => parallax = ref}>
+    <Parallax className="layer" pages={5.7} ref={ref => parallax = ref}>
 
       {/* background color */}
-      <ParallaxLayer offset={0} factor={5.5} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
+      <ParallaxLayer offset={0} factor={5.7} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
       
       <ParallaxLayer offset={0} factor={3} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
       <ParallaxLayer offset={0} speed={0.3} factor={3} style={{ backgroundImage: `url(${LandingPageBiggerStars})`, backgroundSize: 'cover' }} />
@@ -177,8 +178,19 @@ const ParallaxEffect = () => {
 
           <ParallaxLayer offset={2.9}>
               <Form />
+              <Icons>
+              <a href="https://www.linkedin.com/in/kss89/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "linkedin"]} /></a>  
+              <a href="https://twitter.com/ksswimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "twitter"]} /></a>  
+              <a href="https://github.com/KSSwimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "github"]} /></a>  
+              <a href="https://dribbble.com/KSwimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "dribbble"]} /></a>  
+              </Icons>
           </ParallaxLayer>
         </FormDiv>
+
+        <ParallaxLayer offset={2.7} 
+                       speed={1}>
+
+        </ParallaxLayer>
 
       </Parallax>
     </Page>
@@ -204,7 +216,6 @@ flex-direction: column;
 width: 50%;
 height: 2500px;
 background: linear-gradient(180deg, rgba(0,154,205,0.26514355742296913) 0%, rgba(45,0,101,0.3743872549019608) 30%, rgba(9,0,163,0.1923144257703081) 69%, rgba(9,0,163,0) 100%);
-
 `;
 
 
@@ -236,6 +247,17 @@ z-index: 5;
 const FormDiv = styled.div`
 z-index: 301;
 width: 100%;
+margin-top: 35em;
 `
 
+const Icons = styled.div`
+color: #DCE3FF;
+font-size: 10rem;
+width: 700px;
+text-align: center;
+display: flex;
+justify-content: space-between;
+text-decoration: none;
+margin: 0 auto;
+`;
         export default ParallaxEffect;   

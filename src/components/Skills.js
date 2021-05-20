@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 import Arrow from '../SVG/arrow.svg'
+import Ai from '../SVG/Ai.svg'
+import Ae from '../SVG/Ae.svg'
+import Ps from '../SVG/Ps.svg'
+import Xd from '../SVG/Xd.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -98,11 +102,27 @@ const Skills = () => {
                 <DS>
                     <Ht>DESIGN SOFTWARE</Ht>
                         <Icons>
-                            <FontAwesomeIcon icon={['fab', 'html5']} />
-                            <FontAwesomeIcon icon={['fab', 'css3-alt']} />
-                            <FontAwesomeIcon icon={['fab', 'java']} />
-                            <FontAwesomeIcon icon={['fab', 'js']} />
-                            <FontAwesomeIcon icon={['fab', 'python']} />
+                        <img
+                        style={{width: '17%'}} 
+                        src={Ai} 
+                        alt="Adobe Illustrator" />
+
+                        <img
+                        style={{width: '17%'}} 
+                        src={Ps} 
+                        alt="Adobe Illustrator" />
+
+                        <img
+                        style={{width: '17%'}} 
+                        src={Ae} 
+                        alt="Adobe Illustrator" />
+                        
+                        <img
+                        style={{width: '17%'}} 
+                        src={Xd} 
+                        alt="Adobe Illustrator" />
+
+                        <FontAwesomeIcon icon={['fab', 'figma']} />
                         </Icons>
                 </DS>
             </SkillDesripContainer>

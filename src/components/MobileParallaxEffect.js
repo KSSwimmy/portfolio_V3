@@ -25,7 +25,7 @@ import styled from 'styled-components'
 
 
 //functional component
-const ParallaxEffect = () => {
+const MobileParallaxEffect = () => {
     // eslint-disable-next-line
     let parallax;
   return (
@@ -270,4 +270,4 @@ const FormDiv = styled.div`
 
 `
 
-        export default ParallaxEffect;   
+        export default MobileParallaxEffect;   
