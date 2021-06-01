@@ -110,17 +110,17 @@ const Skills = () => {
                         <img
                         style={{width: '17%'}} 
                         src={Ps} 
-                        alt="Adobe Illustrator" />
+                        alt="Adobe Photoshop" />
 
                         <img
                         style={{width: '17%'}} 
                         src={Ae} 
-                        alt="Adobe Illustrator" />
+                        alt="Adobe AfterEffects" />
                         
                         <img
                         style={{width: '17%'}} 
                         src={Xd} 
-                        alt="Adobe Illustrator" />
+                        alt="Adobe Xd" />
 
                         <FontAwesomeIcon icon={['fab', 'figma']} />
                         </Icons>
