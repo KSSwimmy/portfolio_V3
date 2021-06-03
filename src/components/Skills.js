@@ -110,7 +110,7 @@ const Skills = () => {
                         <img
                         style={{width: '17%'}} 
                         src={Ps} 
-                        alt="Adobe Photoshop" />
+                        alt="Adobe PhotoshopReading: Accessibility considerations for color" />
 
                         <img
                         style={{width: '17%'}} 

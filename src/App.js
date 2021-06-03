@@ -53,7 +53,7 @@ position: fixed;
 z-index: 300;
 width: 100%;
 height: 100vh ;
-display: none;
+
 @media ${device.iPad} {
   display: none;
 }

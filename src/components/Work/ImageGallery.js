@@ -32,12 +32,7 @@ const ImageGallery = () => {
                 main: "radial-gradient(circle, rgba(31,195,255,1) 0%, rgba(130,0,255,1) 95%);"
             }
         },
-        {
-            content: '',
-            style: {
-                main: "radial-gradient(circle, rgba(31,195,255,1) 0%, rgba(130,0,255,1) 95%);"
-            }
-        }
+       
     ];
 
     const [modalIndex, setModalIndex] = useState(0)
