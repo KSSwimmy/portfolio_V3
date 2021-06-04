@@ -29,7 +29,7 @@ const onSubmit = data => {
   .then(result => {
     console.log('SUCCESS!', result.status, result.text)
     ContactForm.reset();
-    setStatusMessage("Yay! Message sent!");
+    setStatusMessage("Yay! Message sent! We'll Talk Soon.");
     statusMsg.className = 'status-message success';
     setTimeout(()=> {
       statusMsg.className = 'status-message'
@@ -64,39 +64,51 @@ return (
           <LetsTalk>LET'S TALK!</LetsTalk>
       </LetsTalkBorderDiv>
 
-  <MsgSpan style={{ color: statusMessage === "Yay! Message sent!" ? "#00830B"  : "#ff0000"  }} className='status-message'>{statusMessage}</MsgSpan>    
+  <MsgSpan style={{ fontSize: '6rem', fontFamily: 'Open Sans', fontWeight: 'bold', color: statusMessage === "Yay! Message sent! We'll Talk Soon." ? "#00830B"  : "#ff0000" }} className='status-message'>{statusMessage} </MsgSpan>    
   <FormContainer className='contact-form' id='contact-form' onSubmit={handleSubmit(onSubmit)}>
 
   <InputDiv1> 
-    <Input type="text" placeholder="First name" name="First name" ref={register({required: true, maxLength: 80})} />
-   
-    {errors.user_name && errors.user_name.type === "required" && (
-          <MsgSpan2 role="alert">First name is required<br/></MsgSpan2>
-        )}
 
-    <Input type="text" placeholder="Last name" name="Last name" ref={register({required: true, maxLength: 100})} />
+    <InputColumn>
+      <Input type="text" placeholder="First name" name="First_name" aria-invalid={errors.First_name ? "true" : "false"} ref={register({required: true, maxLength: 80})} />
     
-    {errors.user_name && errors.user_name.type === "required" && (
-          <MsgSpan2 role="alert">First name is required<br/></MsgSpan2>
-        )}
+      {errors.First_name && errors.First_name.type === "required" && (
+            <MsgSpan2 style={{ fontSize: '4rem', color: 'red', fontWeight: 'bold'}} role="alert">First name is required<br/></MsgSpan2>
+          )}
+    </InputColumn>
+
+    <InputColumn>
+      <Input type="text" placeholder="Last name" name="Last_name" aria-invalid={errors.Last_name ? "true" : "false"} ref={register({required: true, maxLength: 100})} />
+      
+      {errors.Last_name && errors.Last_name.type === "required" && (
+            <MsgSpan2 style={{ fontSize: '4rem', color: 'red'}} role="alert">Last name is required<br/></MsgSpan2>
+          )}
+    </InputColumn>
+
   </InputDiv1>
 
-  <InputDiv2>
-    <Input type="text" placeholder="Email" name="Email" ref={register({required: true, pattern: /^\S+@\S+$/i})} />
+  <InputDiv1>
 
-    {errors.user_email && errors.user_email.type === "required" && (
-          <MsgSpan2 role="alert">Email is required<br/></MsgSpan2>
-        )}
+    <InputColumn>
+      <Input type="text" placeholder="Email" name="user_email" aria-invalid={errors.user_email ? "true" : "false"} ref={register({required: true, pattern: /^\S+@\S+$/i})} />
 
-    <Input type="tel" placeholder="Mobile number" name="Mobile number" ref={register({required: true, minLength: 6, maxLength: 12})} />
-  </InputDiv2> 
+      {errors.user_email && errors.user_email.type === "required" && (
+            <MsgSpan2 style={{ fontSize: '4rem', color: 'red'}} role="alert">Email is required<br/></MsgSpan2>
+          )}
+    </InputColumn>
+
+    <InputColumn>
+      <Input type="tel" placeholder="Mobile number" name="Mobile number" />
+    </InputColumn>
+  
+  </InputDiv1> 
 
   <SubTextDiv>
-    <Textarea type="text" placeholder="Message " name="Message " maxLength='2000'
+    <Textarea type="text" placeholder="Message " name="message" maxLength='2000'
     aria-invalid={errors.message ? "true" : "false"} ref={register({ required: true })} />
    
     {errors.message && errors.message.type === "required" && (
-          <MsgSpan2 role="alert">Message is required<br/></MsgSpan2>
+          <MsgSpan2 style={{ fontSize: '4rem', color: 'red', marginBottom: '1em'}} role="alert">Message is required<br/></MsgSpan2>
         )}
   
     <SubmitButton type="submit" >Submit</SubmitButton>
@@ -118,7 +130,7 @@ font-family: 'Open Sans', sans-serif;
 font-size: 6rem;
 `;
 
-const MsgSpan2 = styled.span`
+const MsgSpan2 = styled.div`
 width: 100%;
 height: auto;
 text-align: center;
@@ -130,15 +142,27 @@ font-family: 'Open Sans', sans-serif;
 const InputDiv1 = styled.div`
 display: flex;
 flex-direction: row;
+width: 100%;
+margin: 0 auto;
+text-align: center;
+justify-content: space-around;
 
 @media ${device.iPad} {
   flex-direction: column;
 }
 `;
 
+const InputColumn = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+text-align: center;
+`; 
+
 const LetsTalkBorderDiv = styled.div`
 text-align: center;
-width: 300px;
+width: 350px;
 margin: 0 auto;
 
 `
@@ -158,6 +182,7 @@ flex-direction: row;
 
 const LetsTalkDiv = styled.div`
 width: 100%;
+margin: 0 auto;
 height: auto;
 display: flex;
 flex-direction: column;
@@ -194,7 +219,7 @@ margin: 40px;
 const Input = styled.input`
 font-size: 3.5rem;
 padding: 10px 20px 10px 20px;
-width: 50%;
+width: 90%;
 height: 70px;
 border-radius: 60px;
 margin: 40px;
@@ -209,6 +234,7 @@ height: 70px;
 margin: 0 auto 40px;
 background: #8934EC;
 font-family: 'Exo 2', sans-serif;
+cursor: pointer;
 color: #DCE3FF;
 font-size: 5rem;
 border: solid #DCE3FF;
