@@ -64,7 +64,7 @@ return (
           <LetsTalk>LET'S TALK!</LetsTalk>
       </LetsTalkBorderDiv>
 
-  <MsgSpan style={{ fontSize: '6rem', fontFamily: 'Open Sans', fontWeight: 'bold', color: statusMessage === "Yay! Message sent! We'll Talk Soon." ? "#00830B"  : "#ff0000" }} className='status-message'>{statusMessage} </MsgSpan>    
+  <MsgSpan style={{ fontSize: '4rem', fontFamily: 'Open Sans', fontWeight: 'bold', margin: '1em', color: statusMessage === "Yay! Message sent! We'll Talk Soon." ? "#00830B"  : "#ff0000" }} className='status-message'>{statusMessage} </MsgSpan>    
   <FormContainer className='contact-form' id='contact-form' onSubmit={handleSubmit(onSubmit)}>
 
   <InputDiv1> 
