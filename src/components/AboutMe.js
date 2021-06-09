@@ -32,9 +32,8 @@ const AboutMe = () => {
 
 const Page = styled.div`
 width: 100%;
-
-
 `
+
 const AboutMeDiv = styled.div`
 height: 100vh;
 padding-bottom: 100px;
