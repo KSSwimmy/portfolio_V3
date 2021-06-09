@@ -18,14 +18,12 @@ const AboutMe = () => {
 
                 <TheHTwo>Hi! It's Me! Kimberly!</TheHTwo>
                 <FirstP>
-                    <p>I’m a Full Stack Software Engineer with design being my first love. I was born and raised in the PeeDee area of South Carolina, but the beat of a fast paced “Concrete Jungle” called, New York City caught my heart! I have a flair for problem solving complex problems from code to design. Being able to empathize with the user is my top priority as a designer, software engineer, and also as a person who is visually impaired. Diversity and inclusion is needed in the tech industry because it serves a plethora of people who are not the same. With that being said I feel I'd be a perfect fit on any team! 
+
+                    <p>I’m a Full Stack Software Engineer with design being my first love. I was born and raised in the PeeDee area of South Carolina, but the beat of a fast paced “Concrete Jungle” called, New York City caught my heart! I have a flair for problem solving complex problems from code to design. Being able to empathize with the user is my top priority as a designer, software engineer, and also as a person who is visually impaired. Diversity and inclusion is needed in the tech industry because it serves a plethora of people who are not the same. I feel I'd be a perfect fit on any team because of my passion to make technology more beautifully designed and accessible for all! 
 </p> 
                 </FirstP>
 
-                <SecP>
-                    <p>I’m also a mobile Paint & Sip hostess, and can paint whatever you want on your denim jacket if you want me to! (The Painting Gallivanter)! I just love to create!!! 
-</p>
-                </SecP>
+                
                 
             </TheParagraphDiv>
         </AboutMeDiv>  
@@ -74,7 +72,7 @@ text-align: left;
 font-size: 3.5rem ;
 margin-bottom: 40px
 `
-const SecP = styled.div`
+const Hobbies = styled.div`
 font-family: 'Open Sans', sans-serif;
 text-align: left;
 font-size: 3.5rem ;
