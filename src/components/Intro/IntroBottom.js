@@ -18,7 +18,7 @@ const IntroBottom = () => {
 
                <JobTitleTwo> 
 
-               I am a UX Designer and Software Engineer. I built and designed this site from scratch! With that being said, you can also call me a UX Engineer. 
+               I am a UX Designer and Software Engineer. I designed and built this site from scratch! With that being said, you can also call me a UX/UI Engineer. 
                 
                 </JobTitleTwo> 
             </JobTitleContainer>
