@@ -49,7 +49,7 @@ const TheParagraphDiv = styled.div`
 width: 100%;
 margin: 50px; 
 
-`
+`;
 
 const AboutBorderDiv = styled.div`
 text-align: center;
