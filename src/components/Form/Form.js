@@ -182,12 +182,12 @@ flex-direction: row;
 
 const LetsTalkDiv = styled.div`
 width: 100%;
-margin: 0 auto;
-height: auto;
+margin: 60px 0 auto;
+height: 1400px;
 display: flex;
 flex-direction: column;
 text-align: center;
-justify-content: space-around;
+justify-content: center;
 
 @media ${device.iPad} {
   Margin-top: 109em;

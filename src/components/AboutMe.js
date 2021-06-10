@@ -35,20 +35,20 @@ width: 100%;
 `
 
 const AboutMeDiv = styled.div`
-height: 100vh;
-padding-bottom: 100px;
-
+height: 800px;
 width: 100%;
 display: flex;
 text-align: center;
-justify-content: space-evenly;
+justify-content: center;
 background: transparent;
 `;
 
 const TheParagraphDiv = styled.div`
 width: 100%;
 margin: 50px; 
-
+display: flex;
+flex-direction: column;
+justify-content: center;
 `;
 
 const AboutBorderDiv = styled.div`

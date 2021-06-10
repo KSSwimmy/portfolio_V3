@@ -29,7 +29,7 @@ const IntroBottom = () => {
 const IntroDiv = styled.div`
 background: transparent;
 width: 100%;
-height: auto;
+height: 500px;
 margin: 0 auto;
 display: flex;
 flex-direction: column;

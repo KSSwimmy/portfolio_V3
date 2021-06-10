@@ -139,11 +139,8 @@ height: auto;
 
 `
 const CenteredContainer = styled.div`
-padding-top: 50px;
-padding-bottom: 100px;
-height: 500px;
+height: 1700px;
 width: 100%;
-height: auto;
 display: flex;
 flex-direction: column;
 
