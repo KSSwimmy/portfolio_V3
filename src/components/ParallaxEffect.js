@@ -32,10 +32,10 @@ const ParallaxEffect = () => {
   return (
 
     <Page>
-    <Parallax className="layer" pages={6} ref={ref => parallax = ref}>
+    <Parallax className="layer" pages={6.3} ref={ref => parallax = ref}>
 
       {/* background color */}
-      <ParallaxLayer offset={0} factor={6} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
+      <ParallaxLayer offset={0} factor={6.3} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
       
       <ParallaxLayer offset={0} factor={6} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
       <ParallaxLayer offset={0} speed={0.3} factor={3} style={{ backgroundImage: `url(${LandingPageBiggerStars})`, backgroundSize: 'cover' }} />
@@ -249,7 +249,8 @@ z-index: 5;
 const FormDiv = styled.div`
 z-index: 301;
 width: 100%;
-margin-top: 35em;
+height: auto ;
+margin-top: 50em;
 `
 
 const Icons = styled.div`

@@ -35,7 +35,7 @@ width: 100%;
 `
 
 const AboutMeDiv = styled.div`
-height: 800px;
+height: 900px;
 width: 100%;
 display: flex;
 text-align: center;

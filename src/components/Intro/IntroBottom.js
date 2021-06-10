@@ -30,7 +30,7 @@ const IntroDiv = styled.div`
 background: transparent;
 width: 100%;
 height: 500px;
-margin: 0 auto;
+margin: 0 auto 90px;
 display: flex;
 flex-direction: column;
 color: #DCE3FF;

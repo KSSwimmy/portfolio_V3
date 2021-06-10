@@ -170,7 +170,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 text-align: center;
-margin: 0 auto;
+margin: 50px 0 auto;
 `
 
 const DS = styled.div`
@@ -200,6 +200,7 @@ flex-direction: column;
 justify-content: space-evenly;
 margin: 0 auto;
 width: 89%;
+
 
 `
 const PL = styled.div`

@@ -36,11 +36,12 @@ const IntroDiv = styled.div`
 background: transparent;
 padding: 40px;
 width: 97%;
-height: auto;
+height: 260px;
 text-align: center;
 display: flex;
 flex-direction: column;
 margin: 40px 0 auto;
+
 
     @media ${device.iPad} {
         width: 100%;
@@ -106,6 +107,8 @@ font-weight: 200;
 font-style: italic;
 color: #DCE3FF;
 font-family: 'Exo 2', sans-serif; 
+test-align: center;
+
 
 @media ${device.iPad} {
     

@@ -114,8 +114,8 @@ height: auto;
 `;
 
 const OpenModalContainer = styled.div`
-padding-top: 50px;
-padding-bottom: 100px;
+margin-top: 50px;
+margin-bottom: 100px;
 height: 500px;
 width: 100%;
 height: auto;
@@ -164,6 +164,7 @@ text-align: center;
 background: ${props => props.theme.main};
 height: 100px;
 width: 100px;
+margin-top: 40px ;
 font-size: 2rem;
 `;
 
