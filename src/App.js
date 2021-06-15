@@ -64,13 +64,13 @@ height: 100vh ;
 
 const AppContainer = styled.div`
 margin: 0 auto;
-height: auto;
+height: 100vh;
 width: 100%;
 `;
 
 const AppDiv = styled.div`
 width: 100%;
-height: auto;
+height: 100vh;
 display: flex;
 flex-direction: row;
 margin: 0 auto;

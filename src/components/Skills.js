@@ -135,15 +135,12 @@ const Skills = () => {
 const Page = styled.div`
 width: 100%;
 height: auto;
-
-
 `
 const CenteredContainer = styled.div`
 height: 1700px;
 width: 100%;
 display: flex;
 flex-direction: column;
-
 `
 const TitleContainer = styled.div`
 width: 100%;
@@ -161,7 +158,6 @@ margin-bottom: 30px;
 color: #DCE3FF;
 font-size: 3.5rem;
 text-align: center;
-
 `
 const CircleDiv = styled.div`
 width: 100%;
@@ -170,13 +166,13 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 text-align: center;
-margin: 50px 0 auto;
+margin: 0 auto;
 `
 
 const DS = styled.div`
 text-align: center;
 width: 100%;
-margin: 0 auto;
+margin: 20px 0 auto;
 `
 
 const Sub = styled.span`
@@ -199,14 +195,12 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 margin: 0 auto;
-width: 89%;
-
-
+width: 100%;
 `
 const PL = styled.div`
 text-align: center;
 width: 100%;
-margin: 15px;
+margin: 25px;
 margin: 0 auto;
 `
 const Icons = styled.span`
@@ -224,12 +218,10 @@ color: #DCE3FF;
 const Ht = styled.h2`
 font-weight: 900;
 margin: 0 auto;
-
 font-size: 3.5rem;
 `
 const ArrowSpan = styled.span`
 transform: rotate(90deg); 
-
 `
 const CircleText = styled.div`
 display: flex;

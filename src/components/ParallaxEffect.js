@@ -32,10 +32,10 @@ const ParallaxEffect = () => {
   return (
 
     <Page>
-    <Parallax className="layer" pages={6.3} ref={ref => parallax = ref}>
+    <Parallax className="layer" pages={7.3} ref={ref => parallax = ref}>
 
       {/* background color */}
-      <ParallaxLayer offset={0} factor={6.3} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
+      <ParallaxLayer offset={0} factor={7.3} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
       
       <ParallaxLayer offset={0} factor={6} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
       <ParallaxLayer offset={0} speed={0.3} factor={3} style={{ backgroundImage: `url(${LandingPageBiggerStars})`, backgroundSize: 'cover' }} />
@@ -167,18 +167,14 @@ const ParallaxEffect = () => {
           </ImageGalleryContainer>
           <Skills />
 
-          
         </Column>  
         
 
       </FlexDiv>
 
       <FormDiv>
-        <ParallaxLayer offset={2.2}>
+        
               <AboutMe />
-        </ParallaxLayer>  
-
-          <ParallaxLayer offset={2.9}>
               <Form />
               <Icons>
               <a href="https://www.linkedin.com/in/kss89/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "linkedin"]} /></a>  
@@ -186,13 +182,8 @@ const ParallaxEffect = () => {
               <a href="https://github.com/KSSwimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "github"]} /></a>  
               <a href="https://dribbble.com/KSwimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "dribbble"]} /></a>  
               </Icons>
-          </ParallaxLayer>
+          
         </FormDiv>
-
-        <ParallaxLayer offset={2.7} 
-                       speed={1}>
-
-        </ParallaxLayer>
 
       </Parallax>
     </Page>
@@ -201,12 +192,14 @@ const ParallaxEffect = () => {
 
 const Page = styled.div`
 width: 100%;
-
+height: 100vh;
+display: flex;
+flex-direction: column; 
 `;
 
 const FlexDiv = styled.div`
 width: 100%;
-height: 100vh;
+height: 1000px;
 display: flex;
 flex-direction: row;
 `
@@ -247,10 +240,10 @@ z-index: 5;
 `;
 
 const FormDiv = styled.div`
+position: relative;
 z-index: 301;
 width: 100%;
-height: auto ;
-margin-top: 50em;
+margin-top: 265em;
 `
 
 const Icons = styled.div`

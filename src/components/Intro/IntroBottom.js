@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Star from '../../SVG/bottomTitleStar3.svg'
 
 
 
@@ -47,7 +46,7 @@ text-align: left;
 font-weight: 900;
 margin: 100px 20px 20px 20px;
 color: #DCE3FF;
-font-size: 6rem;
+font-size: 5rem;
 text-align: center;
 `;
 
