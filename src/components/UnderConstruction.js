@@ -165,7 +165,7 @@ const ParallaxEffect = () => {
         <ParallaxLayer offset={2.2} 
                        speed={1}>
         <Kim> 
-            CHECK BACK LATER! SEE YOU SOON! 
+            CHECK BACK LATER! SEE YOU SOON!! 
         </Kim>
         </ParallaxLayer>
 
