@@ -153,10 +153,10 @@ const ParallaxEffect = () => {
           alt="Pluto" />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3.9} 
+        <ParallaxLayer offset={3.7} 
                        speed={1.3}>
           <img
-          style={{width:'65%', marginTop:'20%', marginLeft: '25%'}}  
+          style={{width:'65%', marginTop:'25%', marginLeft: '25%'}}  
           src={Astronaut} 
           alt="Astronaut" />
         </ParallaxLayer>
