@@ -83,7 +83,7 @@ margin-top: 55px;
 const Title = styled.h1`
 font-weight: 900;
 color: #DCE3FF;
-font-size: 7rem;
+font-size: 5rem;
 text-align: center;
 padding-bottom: 5px;
 border-bottom: solid #DCE3FF;
@@ -115,7 +115,7 @@ border-width: thin;
 `;
 
 const AboutThisProjectContainer = styled.div`
-font-size: 3.5rem;
+font-size: 2rem;
 color: #DCE3FF;
 text-align: left;
 font-family: 'Open Sans', sans-serif;
@@ -130,7 +130,7 @@ font-weight: lighter;
 
 const Par = styled.p`
 margin: 40px; 
-font-size: 3.5rem;
+font-size: 2rem;
 color: #DCE3FF;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
@@ -139,7 +139,7 @@ font-weight: lighter;
 const AboutThisProject = styled.h3`
 text-align: center;
 font-weight: 900;
-font-size: 3.5rem;
+font-size: 2rem;
 margin-bottom: 50px;
 `;
 
@@ -181,12 +181,12 @@ flex-direction: column;
 const Myrole = styled.h3`
 text-align: center;
 font-weight: 900;
-font-size: 3.5rem;
+font-size: 2rem;
 margin-bottom: 30px;
 `
 
 const Unordered = styled.ul`
-font-size: 3.5rem;
+font-size: 2rem;
 color: #DCE3FF;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
@@ -195,7 +195,7 @@ margin-bottom: 50px;
 `;
 
 const Unordered2 = styled.ul`
-font-size: 3.5rem;
+font-size: 2rem;
 color: #DCE3FF;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
@@ -210,7 +210,7 @@ margin: 20px;
 const SoftwareUsed = styled.h3`
 text-align: center;
 font-weight: 900;
-font-size: 3rem;
+font-size: 2rem;
 margin-bottom: 20px;
 `;
 

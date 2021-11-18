@@ -198,7 +198,7 @@ const LetsTalk = styled.h1`
 font-weight: 900;
 margin-bottom: 0px;
 color: #DCE3FF;
-font-size: 6rem;
+font-size: 5rem;
 text-align: center;
 
 `;
@@ -217,10 +217,10 @@ margin: 40px;
 `;
 
 const Input = styled.input`
-font-size: 3.5rem;
+font-size: 2.5rem;
 padding: 10px 20px 10px 20px;
 width: 90%;
-height: 70px;
+height: 40px;
 border-radius: 60px;
 margin: 40px;
 font-family: 'Open Sans', sans-serif;
@@ -242,7 +242,7 @@ border-width: thin;
 `;
 
 const Textarea = styled.textarea`
-height: 10em;
+height: 7em;
 width: 70%;
 padding: 30px;
 border-radius: 60px;

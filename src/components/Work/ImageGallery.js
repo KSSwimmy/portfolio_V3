@@ -134,7 +134,7 @@ font-weight: 900;
 margin-top: 30px;
 margin-bottom: 30px;
 color: #DCE3FF;
-font-size: 3.5rem;
+font-size: 2.5rem;
 text-align: center;
 
 `;
@@ -143,7 +143,7 @@ const Work = styled.h1`
 font-weight: 900;
 margin-bottom: 0px;
 color: #DCE3FF;
-font-size: 6rem;
+font-size: 5rem;
 text-align: center;
 `;
 

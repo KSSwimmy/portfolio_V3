@@ -52,7 +52,7 @@ margin: 40px 0 auto;
 const KimDiv = styled.div`
 width: 100%;
 height: 100px;
-font-size: 7rem;
+font-size: 5.2rem;
 font-weight: bold;
 font-family: 'Exo 2', sans-serif;
 text-align: center;
@@ -102,7 +102,7 @@ margin: 0 auto;
 const Portfolio = styled.div`
 margin: 0 auto 30px;
 padding-top: 30px;
-font-size: 6rem;
+font-size: 5rem;
 font-weight: 200;
 font-style: italic;
 color: #DCE3FF;

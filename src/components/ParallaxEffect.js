@@ -14,9 +14,11 @@ import LandingPageBiggerStars from '../SVG/BIGGERSTARS.svg'
 import Neptune from '../SVG/neptune.svg'
 import Uranus from '../SVG/uranus.svg'
 import Pluto from '../SVG/pluto.svg'
+import Astronaut from '../SVG/Astronaut.svg'
 import IntroTop from './Intro/IntroTop'
 import IntroBottom from './Intro/IntroBottom'
 import AboutMe from './AboutMe'
+
 import Skills from './Skills'
 import ImageGallery from './Work/ImageGallery'
 import Form from './Form/Form'
@@ -149,6 +151,14 @@ const ParallaxEffect = () => {
           style={{width:'10%', marginTop:'56%', marginLeft: '85%'}}  
           src={Pluto} 
           alt="Pluto" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={3.9} 
+                       speed={1.3}>
+          <img
+          style={{width:'65%', marginTop:'20%', marginLeft: '25%'}}  
+          src={Astronaut} 
+          alt="Astronaut" />
         </ParallaxLayer>
         
       </Planets>

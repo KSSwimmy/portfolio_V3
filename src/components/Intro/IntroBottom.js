@@ -46,12 +46,12 @@ text-align: left;
 font-weight: 900;
 margin: 100px 20px 20px 20px;
 color: #DCE3FF;
-font-size: 5rem;
+font-size: 4rem;
 text-align: center;
 `;
 
 const JobTitleTwo = styled.p`
-font-size: 3.5rem;
+font-size: 2.5rem;
 margin: 30px;
 margin-bottom: 100px;
 text-align: center;

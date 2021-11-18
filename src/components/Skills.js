@@ -137,7 +137,7 @@ width: 100%;
 height: auto;
 `
 const CenteredContainer = styled.div`
-height: 1700px;
+height: 1470px;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -156,7 +156,7 @@ font-weight: 900;
 margin-top: 30px;
 margin-bottom: 30px;
 color: #DCE3FF;
-font-size: 3.5rem;
+font-size: 2.5rem;
 text-align: center;
 `
 const CircleDiv = styled.div`
@@ -182,7 +182,7 @@ const SkillsDiv = styled.h1`
 font-weight: 900;
 margin: 0 auto;
 color: #DCE3FF;
-font-size: 6rem;
+font-size: 5rem;
 text-align: center;
 `
 const SkillsBorderDiv = styled.div`
@@ -204,7 +204,7 @@ margin: 25px;
 margin: 0 auto;
 `
 const Icons = styled.span`
-font-size: 7rem;
+font-size: 6rem;
 width: 400px;
 text-align: center;
 margin: 0 auto;
@@ -218,7 +218,7 @@ color: #DCE3FF;
 const Ht = styled.h2`
 font-weight: 900;
 margin: 0 auto;
-font-size: 3.5rem;
+font-size: 2.5rem;
 `
 const ArrowSpan = styled.span`
 transform: rotate(90deg); 
@@ -232,12 +232,12 @@ width: 100%;
 
 const Circles = styled.div`
 font-family: 'Exo 2', sans-serif;
-width: 200px;
-height: 200px;
+width: 155px;
+height: 155px;
 border-radius: 50%; 
 color: #DCE3FF; 
 background-color: #1E0030;
-font-size: 3.3rem;
+font-size: 2.5rem;
 font-weight: 900;
 display: flex;
 flex-direction: column;

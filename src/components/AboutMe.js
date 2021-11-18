@@ -61,20 +61,20 @@ font-family: 'Exo 2', sans-serif;
 font-weight: 900;
 margin-bottom: 0px;
 color: #DCE3FF;
-font-size: 6rem;
+font-size: 5rem;
 text-align: center;
 `;
 const FirstP = styled.div`
 font-family: 'Open Sans', sans-serif;
 color: #DCE3FF;
 text-align: left;
-font-size: 3.5rem ;
+font-size: 2.5rem ;
 margin-bottom: 40px
 `
 const Hobbies = styled.div`
 font-family: 'Open Sans', sans-serif;
 text-align: left;
-font-size: 3.5rem ;
+font-size: 2.5rem ;
 `
 const TheHTwo = styled.h2`
 font-family: 'Exo 2', sans-serif;
@@ -82,7 +82,7 @@ font-weight: 900;
 color: #DCE3FF;
 margin-top: 40px;
 margin-bottom: 40px;
-font-size: 3.5rem ;
+font-size: 2.5rem ;
 text-align: left;
 `
 
