@@ -24,7 +24,7 @@ function App() {
             <MobileParallaxEffect />
           </ParDivMobile>
           
-          <UnderConstruction />
+          {/* <UnderConstruction /> */}
           
     </AppDiv>
     
@@ -33,8 +33,8 @@ function App() {
 }
 
 const ParDivMobile = styled.div`
-@media ${device.iPad} {
-  display: none;
+@media ${device.iPadPro} {
+  
   position: relative;
   position: fixed;
   z-index: 300;

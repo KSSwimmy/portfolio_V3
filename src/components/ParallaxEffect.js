@@ -153,10 +153,10 @@ const ParallaxEffect = () => {
           alt="Pluto" />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} 
+        <ParallaxLayer offset={2} 
                        speed={1.3}>
           <img
-          style={{width:'65%', marginTop:'25%', marginLeft: '25%'}}  
+          style={{width:'65%', marginTop:'15%', marginLeft: '15%'}}  
           src={Astronaut} 
           alt="Astronaut" />
         </ParallaxLayer>
@@ -212,7 +212,7 @@ width: 100%;
 height: 1000px;
 display: flex;
 flex-direction: row;
-`
+`;
 
 const Column = styled.div`
 z-index: 101;
@@ -254,7 +254,7 @@ position: relative;
 z-index: 301;
 width: 100%;
 margin-top: 265em;
-`
+`;
 
 const Icons = styled.div`
 color: #DCE3FF;

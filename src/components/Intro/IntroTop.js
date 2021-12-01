@@ -22,9 +22,11 @@ const IntroTop = () => {
                         KIMBERLY SWINTON'S 
                     </Kim>
                 </KimDiv>
-                    <Portfolio> 
-                        PORTFOLIO
-                    </Portfolio> 
+
+
+                <Portfolio> 
+                    PORTFOLIO
+                </Portfolio> 
            
         </IntroDiv>
     )
@@ -40,13 +42,18 @@ height: 260px;
 text-align: center;
 display: flex;
 flex-direction: column;
-margin: 40px 0 auto;
+margin: 0 auto;
 
 
     @media ${device.iPad} {
+        margin: 0 auto;
         width: 100%;
-        
+        height: 25%;
     }
+
+    @media ${device.pixel2XL} {
+        justify-content: space-evenly;
+     }
 `;
 
 const KimDiv = styled.div`
@@ -71,6 +78,8 @@ margin: 0 auto;
         width: 100%;
         left: -40px;
     }
+
+    
 
 `;
 
@@ -100,26 +109,27 @@ margin: 0 auto;
 `;
 
 const Portfolio = styled.div`
-margin: 0 auto 30px;
+
+margin: 0 auto;
 padding-top: 30px;
 font-size: 5rem;
 font-weight: 200;
 font-style: italic;
 color: #DCE3FF;
 font-family: 'Exo 2', sans-serif; 
-test-align: center;
+text-align: center;
 
 
 @media ${device.iPad} {
-    
     font-size: 5rem;
-    text-align: center;
-    margin-left: 24%;
     
-    
-    
-   
 }
+
+@media ${device.pixel2XL} {
+   margin: 40px 0 auto;
+   width: 86%;
+}
+
 `;
 
 

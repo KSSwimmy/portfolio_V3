@@ -4,6 +4,7 @@ import Ai from '../SVG/Ai.svg'
 import Ae from '../SVG/Ae.svg'
 import Ps from '../SVG/Ps.svg'
 import Xd from '../SVG/Xd.svg'
+import { device } from '../device'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -135,13 +136,21 @@ const Skills = () => {
 const Page = styled.div`
 width: 100%;
 height: auto;
-`
+`;
+
 const CenteredContainer = styled.div`
 height: 1470px;
 width: 100%;
 display: flex;
 flex-direction: column;
-`
+
+
+@media ${device.pixel2XL} {
+    height: 1170px;
+    
+  }
+`;
+
 const TitleContainer = styled.div`
 width: 100%;
 text-align: center;
@@ -149,8 +158,8 @@ margin: 0 auto;
 display: flex;
 flex-direction: column;
 align-items: center;
- 
-`
+`;
+
 const SubtDiv = styled.h2`
 font-weight: 900;
 margin-top: 30px;
@@ -158,7 +167,8 @@ margin-bottom: 30px;
 color: #DCE3FF;
 font-size: 2.5rem;
 text-align: center;
-`
+`;
+
 const CircleDiv = styled.div`
 width: 100%;
 height: auto;
@@ -167,16 +177,19 @@ flex-direction: column;
 justify-content: space-evenly;
 text-align: center;
 margin: 0 auto;
-`
+`;
 
 const DS = styled.div`
 text-align: center;
 width: 100%;
 margin: 20px 0 auto;
-`
+text-align: center;
+
+
+`;
 
 const Sub = styled.span`
-`
+`;
 
 const SkillsDiv = styled.h1`
 font-weight: 900;
@@ -184,25 +197,36 @@ margin: 0 auto;
 color: #DCE3FF;
 font-size: 5rem;
 text-align: center;
-`
+
+
+`;
+
 const SkillsBorderDiv = styled.div`
 text-align: center;
 width: 300px;
 margin: 0 auto;
-`
+`;
+
 const SkillDesripContainer = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 margin: 0 auto;
 width: 100%;
-`
+
+@media ${device.pixel2XL} {
+    width: 80%; 
+    
+}
+`;
+
 const PL = styled.div`
 text-align: center;
 width: 100%;
 margin: 25px;
 margin: 0 auto;
-`
+`;
+
 const Icons = styled.span`
 font-size: 6rem;
 width: 400px;
@@ -213,22 +237,36 @@ display: flex;
 justify-content: space-between;
 margin-top: 50px;
 color: #DCE3FF;
-`
+
+@media ${device.pixel2XL} {
+    width: 100%; 
+    justify-content: space-evenly;
+}
+
+`;
 
 const Ht = styled.h2`
 font-weight: 900;
 margin: 0 auto;
 font-size: 2.5rem;
-`
+`;
+
+
 const ArrowSpan = styled.span`
 transform: rotate(90deg); 
-`
+
+@media ${device.pixel2XL} {
+    margin: 0 auto;
+    width: 100%;
+  }
+`;
+
 const CircleText = styled.div`
 display: flex;
 flex-direction: column;
 margin-top: 20px;
 width: 100%;
-`
+`;
 
 const Circles = styled.div`
 font-family: 'Exo 2', sans-serif;
@@ -243,11 +281,11 @@ display: flex;
 flex-direction: column;
 text-align: center;
 margin: 0 auto;
-`
+`;
 
 const NumberDiv = styled.span`
 margin-top: 30px;
-`
+`;
 
 
 export default Skills;

@@ -14,6 +14,7 @@ import LandingPageBiggerStars from '../SVG/BIGGERSTARS.svg'
 import Neptune from '../SVG/neptune.svg'
 import Uranus from '../SVG/uranus.svg'
 import Pluto from '../SVG/pluto.svg'
+import Astronaut from '../SVG/Astronaut.svg'
 import IntroTop from './Intro/IntroTop'
 import IntroBottom from './Intro/IntroBottom'
 import AboutMe from './AboutMe'
@@ -48,7 +49,8 @@ const MobileParallaxEffect = () => {
       
 
 
-        <ParallaxLayer offset={0} 
+        <ParallaxLayer offset={0}
+                       speed={0.8} 
                        >
             <img
           style={{width:'20%', marginLeft: '-3%', marginTop:'20%'}}  
@@ -58,6 +60,7 @@ const MobileParallaxEffect = () => {
 
 
         <ParallaxLayer offset={0} 
+                       speed={2.7}
                        >
             <img
           style={{width:'20%', marginLeft: '78%', marginTop:'30%'}}  
@@ -67,7 +70,8 @@ const MobileParallaxEffect = () => {
 
         
 
-        <ParallaxLayer offset={0.6} 
+        <ParallaxLayer offset={0.6}
+                       speed={0.5} 
                        >
             <img
           style={{width:'3%', marginLeft: '30%'}}  
@@ -77,6 +81,7 @@ const MobileParallaxEffect = () => {
 
       
         <ParallaxLayer offset={2.2} 
+                       speed={3} 
                        >
           <span>
             <img
@@ -86,7 +91,8 @@ const MobileParallaxEffect = () => {
           </span>
         </ParallaxLayer>
       
-        <ParallaxLayer  offset={1}>
+        <ParallaxLayer  offset={1}
+                        speed={0.7}>
                        
           <span>
               <img
@@ -96,7 +102,8 @@ const MobileParallaxEffect = () => {
             </span>
         </ParallaxLayer>
      
-        <ParallaxLayer offset={1}>
+        <ParallaxLayer offset={1}
+                       speed={3}>
                        
           
               <img
@@ -106,7 +113,8 @@ const MobileParallaxEffect = () => {
         </ParallaxLayer>
 
       
-        <ParallaxLayer offset={1.2}> 
+        <ParallaxLayer offset={0.95} 
+                       speed={3}> 
                        
           <img
           style={{width:'45%', marginTop:'20%', marginLeft: '25%'}}  
@@ -114,16 +122,16 @@ const MobileParallaxEffect = () => {
           alt="Earth" />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.2} 
-                       >
+        <ParallaxLayer offset={0.95} 
+                       speed={3}>
           <img
           style={{width:'13%', marginTop:'5%', marginLeft: '17%'}}  
           src={Satellite} 
           alt="Satellite" />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.2} 
-                       >
+        <ParallaxLayer offset={0.95} 
+                       speed={3}>
           <img
           style={{width:'10%', marginTop:'3%', marginLeft: '85%'}}  
           src={Moon} 
@@ -132,27 +140,35 @@ const MobileParallaxEffect = () => {
       
        
         <ParallaxLayer offset={1.9} 
-                       >
+                       speed={2}>
           <img
           style={{width:'10%', marginTop:'20%', marginLeft: '80%'}}  
           src={Neptune} 
           alt="Neptune" />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3.9} 
-                       >
+        <ParallaxLayer offset={1.9} 
+                       speed={1.3}>
           <img
           style={{width:'10%', marginTop:'40%', marginLeft: '5%'}}  
           src={Uranus} 
           alt="Uranus" />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.5} 
-                       >
+        <ParallaxLayer offset={1.9} 
+                       speed={1.3}>
           <img
           style={{width:'10%', marginTop:'56%', marginLeft: '85%'}}  
           src={Pluto} 
           alt="Pluto" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={2.2} 
+                       speed={1}>
+          <img
+          style={{width:'85%', marginTop:'25%', marginLeft: '12%'}}  
+          src={Astronaut} 
+          alt="Astronaut" />
         </ParallaxLayer>
         
       </Planets>
@@ -160,9 +176,10 @@ const MobileParallaxEffect = () => {
       
       <Column>
     
-       
-              <IntroTop /> 
-         
+       <IntroTopContainer>
+          <IntroTop /> 
+      </IntroTopContainer>
+
             <MarginDiv>
           
             
@@ -210,11 +227,15 @@ const Page = styled.div`
 
 const MarginDiv = styled.div`
 @media ${device.iPad} {
-  Margin-top: 150em;
+  Margin-top: 270em;
+}
+
+@media ${device.pixel2XL} {
+  margin-top: 150em ;
 }
 
 
-`
+`;
 
 const Column = styled.div`
 position: relative;

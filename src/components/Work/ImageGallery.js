@@ -1,6 +1,7 @@
 import ReUsableModal from './ReUsableModal'
 import styled, { ThemeProvider } from 'styled-components'
 import React, { useState } from 'react'
+import { device } from '../../device'
 
 import { data } from './data.js'
 
@@ -166,6 +167,12 @@ height: 100px;
 width: 100px;
 margin-top: 40px ;
 font-size: 2rem;
+
+@media ${device.pixel2XL} {
+    margin-top: 10px;
+    
+ }
+
 `;
 
 const theme = {

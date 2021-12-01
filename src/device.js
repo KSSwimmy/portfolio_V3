@@ -12,6 +12,7 @@ const size = {
     pixel2XL: '411px',
     galaxyS5: '360px',
     
+    
   }
 
 
@@ -25,6 +26,7 @@ export const device = {
     iPhone678: `(max-width: ${size.iPhone678})`,
     iPhone5SE: `(max-width: ${size.iPhone5SE})`,
     pixel2XL: `(max-width: ${size.pixel2XL})`,
+    galaxyS5: `(max-width: ${size.galaxyS5})`
 
   };
 
