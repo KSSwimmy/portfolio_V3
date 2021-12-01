@@ -165,7 +165,7 @@ text-align: center;
 width: 350px;
 margin: 0 auto;
 
-`
+`;
 
 
 const InputDiv2 = styled.div`
@@ -229,14 +229,14 @@ background: #DCE3FF;
 
 const SubmitButton = styled.button`
 border-radius: 60px;
-width: 15%;
+width: 13%;
 height: 70px;
 margin: 0 auto 40px;
 background: #8934EC;
 font-family: 'Exo 2', sans-serif;
 cursor: pointer;
 color: #DCE3FF;
-font-size: 5rem;
+font-size: 3rem;
 border: solid #DCE3FF;
 border-width: thin; 
 `;
