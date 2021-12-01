@@ -239,6 +239,11 @@ color: #DCE3FF;
 font-size: 3rem;
 border: solid #DCE3FF;
 border-width: thin; 
+
+@media ${device.pixel2XL} {
+  width: 100%; 
+ 
+}
 `;
 
 const Textarea = styled.textarea`
