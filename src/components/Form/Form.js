@@ -176,7 +176,7 @@ flex-direction: row;
   flex-direction: column;
   margin: 0 auto;
 }
-`
+`;
 
 
 
@@ -190,7 +190,7 @@ text-align: center;
 justify-content: center;
 
 @media ${device.iPad} {
-  Margin-top: 109em;
+  Margin-top: 150px;
 }
 `;
 
@@ -240,7 +240,12 @@ font-size: 3rem;
 border: solid #DCE3FF;
 border-width: thin; 
 
-@media ${device.pixel2XL} {
+@media ${device.iPadPro} {
+  width: 100%; 
+ 
+}
+
+@media ${device.surfaceDuo} {
   width: 100%; 
  
 }

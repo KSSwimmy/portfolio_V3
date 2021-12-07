@@ -36,29 +36,27 @@ const IntroTop = () => {
 
 const IntroDiv = styled.div`
 background: transparent;
-padding: 40px;
-width: 97%;
+width: 100%;
 height: 260px;
 text-align: center;
 display: flex;
 flex-direction: column;
-margin: 0 auto;
+margin: 100px 0 auto;
 
 
     @media ${device.iPad} {
-        margin: 0 auto;
-        width: 100%;
+        
         height: 25%;
     }
 
-    @media ${device.pixel2XL} {
+    @media ${device.surfaceDuo} {
         justify-content: space-evenly;
+        margin-top: 300px ;
      }
 `;
 
 const KimDiv = styled.div`
-width: 100%;
-height: 100px;
+width: 100%;height: 100px;
 font-size: 5.2rem;
 font-weight: bold;
 font-family: 'Exo 2', sans-serif;
@@ -72,9 +70,9 @@ margin: 0 auto;
         left: -40px;
     }
 
-    @media ${device.pixel2XL} {
-        margin-top: 3em;
-        font-size: 6rem;
+    @media ${device.surfaceDuo} {
+        margin-right: -50px;
+        font-size: 4.6rem;
         width: 100%;
         left: -40px;
     }
@@ -118,16 +116,17 @@ font-style: italic;
 color: #DCE3FF;
 font-family: 'Exo 2', sans-serif; 
 text-align: center;
-
+width: 100%;
 
 @media ${device.iPad} {
     font-size: 5rem;
     
 }
 
-@media ${device.pixel2XL} {
-   margin: 40px 0 auto;
-   width: 86%;
+@media ${device.surfaceDuo} {
+   margin: 0 auto;
+   
+   
 }
 
 `;

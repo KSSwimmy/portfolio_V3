@@ -168,7 +168,7 @@ width: 100px;
 margin-top: 40px ;
 font-size: 2rem;
 
-@media ${device.pixel2XL} {
+@media ${device.surfaceDuo} {
     margin-top: 10px;
     
  }

@@ -216,7 +216,7 @@ width: 100%;
 
 @media ${device.pixel2XL} {
     width: 80%; 
-    
+    margin-bottom: 150px ;
 }
 `;
 

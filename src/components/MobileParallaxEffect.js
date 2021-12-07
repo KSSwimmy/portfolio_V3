@@ -230,7 +230,7 @@ const MarginDiv = styled.div`
   Margin-top: 270em;
 }
 
-@media ${device.pixel2XL} {
+@media ${device.surfaceDuo} {
   margin-top: 150em ;
 }
 
