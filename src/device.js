@@ -5,10 +5,11 @@ const size = {
     surfaceDuo: '540px',
     iPadPro: '1024px',
     iPad: '768px',
+    iPadAir: '820px',
     iPhoneX: '375px',
     iPhone678Plus: '414px',
     iPhone678: '375px',
-    iPhone5SE: '2560px',
+    iPhone12Pro: '390px',
     pixel2XL: '411px',
     galaxyS5: '360px',
     
@@ -21,10 +22,11 @@ export const device = {
     surfaceDuo: `(max-width: ${size.surfaceDuo})`,
     iPadPro: `(max-width: ${size.iPadPro})`,
     iPad: `(max-width: ${size.iPad})`,
+    iPadAir: `(max-width: ${size.iPadAir})`,
     iPhoneX: `(max-width: ${size.iPhoneX})`,
     iPhone678Plus: `(max-width: ${size.iPhone678Plus})`,
     iPhone678: `(max-width: ${size.iPhone678})`,
-    iPhone5SE: `(max-width: ${size.iPhone5SE})`,
+    iPhone12Pro: `(min-width: ${size.iPhone12Pro})`,
     pixel2XL: `(max-width: ${size.pixel2XL})`,
     galaxyS5: `(max-width: ${size.galaxyS5})`
 

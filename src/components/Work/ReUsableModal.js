@@ -96,11 +96,18 @@ overflow-y: auto;
 border-radius: 20px;
 background: rgb(22,0,57);
 box-shadow: 0 0 17px rgba(0,0,0,0.30);
-z-index: 101;
+z-index: 201;
 padding: 40px;
-@media ${device.iPad} {
-    top: 230em;
-    height: 10%;
+@media ${device.iPadAir} {
+    top: 10%;
+    height: 700px;
+
+}
+
+@media ${device.iPhone12Pro} {
+    top: 29%;
+    height: 500px;
+
 }
 `;
 

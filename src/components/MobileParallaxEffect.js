@@ -20,6 +20,7 @@ import IntroBottom from './Intro/IntroBottom'
 import AboutMe from './AboutMe'
 import Skills from './Skills'
 import ImageGallery from './Work/ImageGallery'
+import UXImageGallery from './UX/UXImageGallery'
 import Form from './Form/Form'
 import styled from 'styled-components'
 
@@ -189,10 +190,10 @@ const MobileParallaxEffect = () => {
 
           
               
+              <ImageGalleryContainer>
                 <ImageGallery />
-             
-        
-
+                <UXImageGallery />
+              </ImageGalleryContainer>
           
            
               <Skills />
