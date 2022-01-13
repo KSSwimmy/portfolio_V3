@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import { data } from './data.js'
 
 
-const ImageGallery = () => {
+const UXImageGallery = () => {
     const modalRef = React.useRef();
     
 
@@ -14,24 +14,6 @@ const ImageGallery = () => {
     }
 
     const modalContent = [
-        {
-            content: '',
-            style: {
-                main: "radial-gradient(circle, rgba(31,195,255,1) 0%, rgba(130,0,255,1) 95%);"
-            }
-        },
-        {
-            content: '',
-            style: {
-                main: "radial-gradient(circle, rgba(31,195,255,1) 0%, rgba(130,0,255,1) 95%);"
-            }
-        },
-        {
-            content: '',
-            style: {
-                main: "radial-gradient(circle, rgba(31,195,255,1) 0%, rgba(130,0,255,1) 95%);"
-            }
-        },
         {
             content: '',
             style: {
@@ -79,13 +61,9 @@ const ImageGallery = () => {
     return(
         <OpenModal>
         
-            <WorkBorderDiv 
-                style={{
-                borderBottomStyle: 'solid',
-                borderBottomColor: '#DCE3FF', 
-                borderWidth: 'thin'}}>
-                <Work>WORK</Work>
-            </WorkBorderDiv>
+            
+
+            <SubtDiv>UX DESIGN</SubtDiv>
 
         <ThemeProvider theme={theme}>
             <OpenModalContainer>
@@ -113,7 +91,7 @@ const ImageGallery = () => {
 
 const BookrWrapper = styled.div`
 width: 100%;
-height: 100%;
+height: auto;
 
 `;
 
@@ -127,24 +105,22 @@ display: flex;
 justify-content: space-around;
 `;
 
-const WorkBorderDiv = styled.div`
+const SubtDiv = styled.h2`
+font-weight: 900;
+margin-top: 30px;
+margin-bottom: 30px;
+color: #DCE3FF;
+font-size: 2.5rem;
 text-align: center;
-width: 300px;
-margin: 0 auto;
+
 `;
 
-const Work = styled.h1`
-font-weight: 900;
-margin-bottom: 0px;
-color: #DCE3FF;
-font-size: 6rem;
-text-align: center;
-`;
+
 
 const OpenModal = styled.div`
 background: transparent;
 text-align: center;
-height: 100%;
+height: 500px;
 width: 100%;
 `;
 
@@ -168,4 +144,4 @@ const theme = {
 
 
 
-export default ImageGallery;
+export default UXImageGallery;

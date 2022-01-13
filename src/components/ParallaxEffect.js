@@ -21,6 +21,7 @@ import AboutMe from './AboutMe'
 
 import Skills from './Skills'
 import ImageGallery from './Work/ImageGallery'
+import UXImageGallery from './UX/UXImageGallery'
 import Form from './Form/Form'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -171,10 +172,13 @@ const ParallaxEffect = () => {
           <IntroBottomContainer>
             <IntroBottom />
           </IntroBottomContainer>
-          {/* <AboutMe /> */}
           <ImageGalleryContainer>
             <ImageGallery />
+            <UXImageGallery />
           </ImageGalleryContainer>
+          
+          
+          
           <Skills />
 
         </Column>  
@@ -253,7 +257,7 @@ const FormDiv = styled.div`
 position: relative;
 z-index: 301;
 width: 100%;
-margin-top: 265em;
+margin-top: 285em;
 `;
 
 const Icons = styled.div`

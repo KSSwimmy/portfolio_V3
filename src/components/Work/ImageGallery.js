@@ -151,7 +151,7 @@ text-align: center;
 const OpenModal = styled.div`
 background: transparent;
 text-align: center;
-height: 500px;
+height: 400px;
 width: 100%;
 `;
 

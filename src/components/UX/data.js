@@ -1,21 +1,12 @@
-import Bookr from './Projects/Bookr'
-import Ori from './Projects/Ori'
-import Xport from './Projects/Xport'
+import BABS from './Projects/BABS'
 
 export const data = [
     {
-        content: <Bookr />,
+        content: <BABS />,
         
     },
-    {
-        content: <Ori />, 
-    },
-    {
-        content: <Xport />,
-    },
-    {
-        content: 'This is Fourth modal',
-    },
+    
+      
 ];
 
 
