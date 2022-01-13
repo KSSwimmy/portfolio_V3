@@ -104,7 +104,7 @@ return (
   </InputDiv1> 
 
   <SubTextDiv>
-    <Textarea type="text" placeholder="Message " name="message" maxLength='2000'
+    <Textarea type="text" placeholder="Type something to me... " name="message" maxLength='2000'
     aria-invalid={errors.message ? "true" : "false"} ref={register({ required: true })} />
    
     {errors.message && errors.message.type === "required" && (
@@ -260,6 +260,14 @@ font-size: 3.5rem;
 font-family: 'Open Sans', sans-serif;
 margin: 0 auto 40px;
 background: #DCE3FF;
+
+@media ${device.iPhoneX} {
+  font-size: 3rem;
+  border-radius: 50px;
+  width: 80%;
+  height: 500px;
+
+}
 `;
 
 init('user_RGchjDEpAojOiC34MHwys')

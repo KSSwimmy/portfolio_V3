@@ -109,6 +109,12 @@ padding: 40px;
     height: 500px;
 
 }
+
+@media ${device.iPhoneX} {
+    top: 37%;
+    height: 500px;
+
+}
 `;
 
 
