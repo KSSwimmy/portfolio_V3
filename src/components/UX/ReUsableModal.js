@@ -100,7 +100,7 @@ z-index: 200;
 padding: 40px;
 
 @media ${device.iPadAir} {
-    top: 10%;
+    top: 13%;
     height: 700px;
 
 };

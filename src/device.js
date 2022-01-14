@@ -26,7 +26,7 @@ export const device = {
     iPhoneX: `(max-width: ${size.iPhoneX})`,
     iPhone678Plus: `(max-width: ${size.iPhone678Plus})`,
     iPhone678: `(max-width: ${size.iPhone678})`,
-    iPhone12Pro: `(min-width: ${size.iPhone12Pro})`,
+    iPhone12Pro: `(max-width: ${size.iPhone12Pro})`,
     pixel2XL: `(max-width: ${size.pixel2XL})`,
     galaxyS5: `(max-width: ${size.galaxyS5})`
 
