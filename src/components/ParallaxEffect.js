@@ -270,4 +270,6 @@ justify-content: space-between;
 text-decoration: none;
 margin: 0 auto;
 `;
-        export default ParallaxEffect;   
+        
+
+export default ParallaxEffect;   

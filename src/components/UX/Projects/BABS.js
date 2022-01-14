@@ -3,14 +3,30 @@ import { device } from  '../../../device'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-const Bookr = () => {
+const Babs = () => {
     return (
         <Container>
            <Title>BABS </Title>
-            <SupTitle>CURRENTLY IN PROGRESS...</SupTitle>
+            <SubTitle>CURRENTLY IN PROGRESS...</SubTitle>
             <FirstP>
-                <p> BABS is a beauty supply store finder that is a mobile first app and is also accompanied with a website.  It’s target users are teenage  and young women between the ages of 16 and 60+. Think of this app as a Yelp, but with a more targeted audience and sense of community. BABS will be the goto app for locating beauty supply stores in a new area, reviews, and pricing of products. </p> 
+                <p> BABS (Beauty App Beauty Supply) is a beauty supply store finder that is a mobile first app and is also accompanied with a website.  It’s target users are teenage  and young women between the ages of 16 and 60+. Think of this app as a Yelp, but with a more targeted audience and sense of community. BABS will be the goto app for locating beauty supply stores in a new area, reviews, and pricing of products. </p> 
             </FirstP>
+            <Icons>
+            <IconContainer>
+                <a href="https://www.figma.com/file/AGiUdiz4UrYUrZN0HBlydE/BABS-Project?node-id=221%3A36" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "figma"]} /></a> 
+                <SubTitle>Lo-Fi Prototype</SubTitle>
+            </IconContainer>
+            <IconContainer>
+            <a href="https://www.figma.com/file/AGiUdiz4UrYUrZN0HBlydE/BABS-Project?node-id=221%3A36" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fas", "file-alt"]}/></a> 
+                <SubTitle>Case Study Draft Google Doc</SubTitle>
+            </IconContainer>  
+            <IconContainer>
+                <a href="https://www.figma.com/file/EII5ZmrpASnrW9UDr7aEIu/Case-Study-Layout?node-id=0%3A1" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "figma"]} /></a> 
+                <SubTitle>Case Study Layout</SubTitle>
+            </IconContainer>  
+            
+            </Icons>
+
         </Container>
 
 
@@ -43,7 +59,7 @@ text-align: center;
     }
 `;
 
-const SupTitle = styled.h2`
+const SubTitle = styled.h2`
 font-weight: 900;
 margin-top: 30px;
 margin-bottom: 30px;
@@ -63,7 +79,20 @@ margin-bottom: 40px;
 line-height: 1.5;
 `
 
+const Icons = styled.div`
+color: #DCE3FF;
+font-size: 7rem;
+width: 100%;
+text-align: center;
+display: flex;
+justify-content: space-evenly;
+text-decoration: none;
+margin: 0 auto;
+`;
+
+const IconContainer = styled.div`
+
+`;
 
 
-
-export default Bookr;
+export default Babs;
