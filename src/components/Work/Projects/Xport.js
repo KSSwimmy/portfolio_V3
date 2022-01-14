@@ -127,6 +127,7 @@ font-size: 2rem;
 color: #DCE3FF;
 font-family: 'Open Sans', sans-serif;
 font-weight: lighter;
+line-height: 1.5;
 `;
 
 const AboutThisProject = styled.h3`

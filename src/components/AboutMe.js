@@ -69,7 +69,8 @@ font-family: 'Open Sans', sans-serif;
 color: #DCE3FF;
 text-align: left;
 font-size: 2.5rem ;
-margin-bottom: 40px
+margin-bottom: 40px;
+line-height: 1.5;
 `
 const Hobbies = styled.div`
 font-family: 'Open Sans', sans-serif;

@@ -55,6 +55,7 @@ font-size: 2.5rem;
 margin: 30px;
 margin-bottom: 100px;
 text-align: center;
+line-height: 1.5;
 `;
 
 {/* <IntroDiv> 
