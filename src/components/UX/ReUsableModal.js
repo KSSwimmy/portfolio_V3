@@ -105,17 +105,23 @@ padding: 40px;
 
 };
 
+@media ${device.iPhone678Plus} {
+    top: 28.5%;
+    height: 500px;
+
+};
+
 @media ${device.iPhone12Pro} {
     top: 33%;
     height: 500px;
 
-}
+};
 
 @media ${device.iPhoneX} {
-    top: 42%;
+    top: 39%;
     height: 500px;
 
-}
+};
 `;
 
 

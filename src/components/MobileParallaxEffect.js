@@ -33,10 +33,10 @@ const MobileParallaxEffect = () => {
   return (
 
     <Page>
-    <Parallax className="layer" pages={12} ref={ref => parallax = ref}>
+    <Parallax className="layer" pages={13} ref={ref => parallax = ref}>
 
       {/* background color */}
-      <ParallaxLayer offset={0} factor={12} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
+      <ParallaxLayer offset={0} factor={13} style={{ background: 'linear-gradient(180deg, rgba(12,0,35,1) 28%, rgba(17,39,101,1) 69%, rgba(99,27,135,1) 100%)', backgroundSize: 'cover'  }} />
       
       <ParallaxLayer offset={0} factor={7} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
       <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: `url(${LandingPageBiggerStars})`, backgroundSize: 'cover' }} />
@@ -223,6 +223,10 @@ const Page = styled.div`
     width:100% ;
     margin: 0 auto;
     height: 100vh;
+  }
+
+  @media ${device.iPhoneX} {
+
   }
 `;
 

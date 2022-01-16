@@ -8,7 +8,6 @@ const size = {
     iPadAir: '820px',
     iPhoneX: '375px',
     iPhone678Plus: '414px',
-    iPhone678: '375px',
     iPhone12Pro: '390px',
     pixel2XL: '411px',
     galaxyS5: '360px',

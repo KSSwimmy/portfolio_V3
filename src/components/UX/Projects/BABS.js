@@ -14,15 +14,15 @@ const Babs = () => {
             <Icons>
             <IconContainer>
                 <a href="https://www.figma.com/file/AGiUdiz4UrYUrZN0HBlydE/BABS-Project?node-id=221%3A36" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "figma"]} /></a> 
-                <SubTitle>Lo-Fi Prototype</SubTitle>
+                <SubTitle2>Lo-Fi Prototype</SubTitle2>
             </IconContainer>
             <IconContainer>
-            <a href="https://www.figma.com/file/AGiUdiz4UrYUrZN0HBlydE/BABS-Project?node-id=221%3A36" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fas", "file-alt"]}/></a> 
-                <SubTitle>Case Study Draft Google Doc</SubTitle>
+            <a href="https://docs.google.com/document/d/1fd5N4CUGtbPPqNpJirQwnUutNMHB7_p2zLWgEhRh5k0/edit?usp=sharing" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fas", "file-alt"]}/></a> 
+                <SubTitle2>Case Study Draft Google Doc</SubTitle2>
             </IconContainer>  
             <IconContainer>
                 <a href="https://www.figma.com/file/EII5ZmrpASnrW9UDr7aEIu/Case-Study-Layout?node-id=0%3A1" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "figma"]} /></a> 
-                <SubTitle>Case Study Layout</SubTitle>
+                <SubTitle2>Case Study Layout</SubTitle2>
             </IconContainer>  
             
             </Icons>
@@ -53,10 +53,10 @@ text-align: center;
 
     @media ${device.iPad} {
         margin: 0 auto;
-        width: 100%;
-        
-        
-    }
+        width: 100%;    
+    };
+
+
 `;
 
 const SubTitle = styled.h2`
@@ -66,6 +66,19 @@ margin-bottom: 30px;
 color: #DCE3FF;
 font-size: 2.5rem;
 text-align: center;
+`;
+
+const SubTitle2 = styled.h2`
+font-weight: 900;
+margin-top: 30px;
+margin-bottom: 30px;
+color: #DCE3FF;
+font-size: 2.5rem;
+text-align: center;
+
+@media ${device.iPhoneX} {
+    font-size: 2rem;
+};
 `;
 
 const FirstP = styled.div`
@@ -88,6 +101,23 @@ display: flex;
 justify-content: space-evenly;
 text-decoration: none;
 margin: 0 auto;
+
+@media ${device.iPad} {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+};
+
+@media ${device.iPhoneX} {
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+};
+
+
+
 `;
 
 const IconContainer = styled.div`

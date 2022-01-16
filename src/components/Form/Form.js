@@ -261,13 +261,19 @@ font-family: 'Open Sans', sans-serif;
 margin: 0 auto 40px;
 background: #DCE3FF;
 
-@media ${device.iPhoneX} {
+@media ${device.iPhoneX.iPhone12Pro} {
   font-size: 3rem;
   border-radius: 50px;
   width: 80%;
   height: 500px;
 
 }
+
+
+
+
 `;
+
+
 
 init('user_RGchjDEpAojOiC34MHwys')
