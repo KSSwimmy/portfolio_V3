@@ -70,7 +70,7 @@ return (
   <InputDiv1> 
 
     <InputColumn>
-      <Input type="text" placeholder="First name" name="First_name" aria-invalid={errors.First_name ? "true" : "false"} ref={register({required: true, maxLength: 80})} />
+      <Input  type="text" placeholder="First name" name="First_name" aria-invalid={errors.First_name ? "true" : "false"} ref={register({required: true, maxLength: 80})} />
     
       {errors.First_name && errors.First_name.type === "required" && (
             <MsgSpan2 style={{ fontSize: '4rem', color: 'red', fontWeight: 'bold'}} role="alert">First name is required<br/></MsgSpan2>
@@ -149,7 +149,14 @@ justify-content: space-around;
 
 @media ${device.iPad} {
   flex-direction: column;
+
 }
+
+@media ${device.samsungGalaxyS20Ultra} {
+  width: 85%;  
+  
+}
+
 `;
 
 const InputColumn = styled.div`
@@ -158,6 +165,11 @@ flex-direction: column;
 align-items: center;
 width: 100%;
 text-align: center;
+
+@media ${device.samsungGalaxyS20Ultra} {
+  
+  
+}
 `; 
 
 const LetsTalkBorderDiv = styled.div`
@@ -268,8 +280,6 @@ background: #DCE3FF;
   height: 500px;
 
 }
-
-
 
 
 `;

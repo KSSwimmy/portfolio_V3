@@ -112,7 +112,7 @@ padding: 40px;
 };
 
 @media ${device.iPhone12Pro} {
-    top: 33%;
+    top: 30.5%;
     height: 500px;
 
 };
