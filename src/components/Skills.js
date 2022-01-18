@@ -145,7 +145,7 @@ display: flex;
 flex-direction: column;
 
 
-@media ${device.samsungGalaxyS20Ultra} {
+@media ${device.samsungGalaxyS20Ultra.iPhone678Plus} {
     height: 1160px;
     
   }

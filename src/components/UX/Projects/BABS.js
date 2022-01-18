@@ -9,7 +9,7 @@ const Babs = () => {
            <Title>BABS </Title>
             <SubTitle>CURRENTLY IN PROGRESS...</SubTitle>
             <FirstP>
-                <p> BABS (Beauty App Beauty Supply) is a beauty supply store finder that is a mobile first app and is also accompanied with a website.  It’s target users are teenage  and young women between the ages of 16 and 60+. Think of this app as a Yelp, but with a more targeted audience and sense of community. BABS will be the goto app for locating beauty supply stores in a new area, reviews, and pricing of products. </p> 
+                <p> BABS (Beauty App Beauty Supply) is a beauty supply store finder that is a mobile first app and it is also accompanied with a website.  It’s target users are women between the ages of 16 and 60+. Think of this app being similar to Yelp, but with a more targeted audience and sense of community. BABS will be the goto app for locating beauty supply stores in a new area for users, call in orders for pick up, and reviews. </p> 
             </FirstP>
             <Icons>
             <IconContainer>
