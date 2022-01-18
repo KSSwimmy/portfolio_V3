@@ -145,10 +145,12 @@ display: flex;
 flex-direction: column;
 
 
-@media ${device.pixel2XL} {
-    height: 1170px;
+@media ${device.samsungGalaxyS20Ultra} {
+    height: 1160px;
     
   }
+
+
 `;
 
 const TitleContainer = styled.div`
@@ -214,9 +216,9 @@ justify-content: space-evenly;
 margin: 0 auto;
 width: 100%;
 
-@media ${device.pixel2XL} {
+@media ${device.samsungGalaxyS20Ultra} {
     width: 80%; 
-    margin-bottom: 150px ;
+    margin-bottom: 270px ;
 }
 `;
 
@@ -238,7 +240,7 @@ justify-content: space-between;
 margin-top: 50px;
 color: #DCE3FF;
 
-@media ${device.pixel2XL} {
+@media ${device.samsungGalaxyS20Ultra} {
     width: 100%; 
     justify-content: space-evenly;
 }
@@ -255,7 +257,7 @@ font-size: 2.5rem;
 const ArrowSpan = styled.span`
 transform: rotate(90deg); 
 
-@media ${device.pixel2XL} {
+@media ${device.samsungGalaxyS20Ultra} {
     margin: 0 auto;
     width: 100%;
   }
