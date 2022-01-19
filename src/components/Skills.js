@@ -254,7 +254,7 @@ color: #DCE3FF;
 }
 
 @media ${device.iPhone678Plus} {
-    width: 80%;  
+    width: 90%;  
     justify-content: space-around;
     font-size: 5rem;
   }

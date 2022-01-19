@@ -23,6 +23,7 @@ import ImageGallery from './Work/ImageGallery'
 import UXImageGallery from './UX/UXImageGallery'
 import Form from './Form/Form'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -206,6 +207,13 @@ const MobileParallaxEffect = () => {
 
             
               <Form />
+
+              <Icons>
+              <a href="https://www.linkedin.com/in/kss89/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "linkedin"]} /></a>  
+              <a href="https://twitter.com/ksswimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "twitter"]} /></a>  
+              <a href="https://github.com/KSSwimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "github"]} /></a>  
+              <a href="https://dribbble.com/KSwimmy" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "dribbble"]} /></a>  
+              </Icons>
             
 
           </MarginDiv>
@@ -295,5 +303,16 @@ const FormDiv = styled.div`
 
 
 `
+
+const Icons = styled.div`
+color: #DCE3FF;
+font-size: 5rem;
+width: 80%;
+text-align: center;
+display: flex;
+justify-content: space-between;
+text-decoration: none;
+margin: 0 auto;
+`;
 
         export default MobileParallaxEffect;   
