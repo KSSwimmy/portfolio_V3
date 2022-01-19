@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import LandingPageStars from '../SVG/bodyStars.svg'
-
+import { device } from '../device'
 
 
 
@@ -35,12 +35,16 @@ width: 100%;
 `
 
 const AboutMeDiv = styled.div`
-
 width: 100%;
 display: flex;
 text-align: center;
 justify-content: center;
 background: transparent;
+
+@media ${device.iPhone678Plus} {
+    
+    margin-top: 220px;
+}
 `;
 
 const TheParagraphDiv = styled.div`
@@ -56,6 +60,7 @@ text-align: center;
 width: 300px;
 margin: 0 auto;
 `;
+
 const About = styled.h1`
 font-family: 'Exo 2', sans-serif;
 font-weight: 900;

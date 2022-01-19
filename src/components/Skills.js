@@ -145,10 +145,15 @@ display: flex;
 flex-direction: column;
 
 
-@media ${device.samsungGalaxyS20Ultra.iPhone678Plus} {
+@media ${device.samsungGalaxyS20Ultra} {
     height: 1160px;
     
   }
+
+@media ${device.iPhone678Plus} {
+    height: 1160px;
+
+}
 
 
 `;
@@ -216,10 +221,13 @@ justify-content: space-evenly;
 margin: 0 auto;
 width: 100%;
 
+
 @media ${device.samsungGalaxyS20Ultra} {
     width: 80%; 
     margin-bottom: 270px ;
 }
+
+
 `;
 
 const PL = styled.div`
@@ -244,6 +252,12 @@ color: #DCE3FF;
     width: 100%; 
     justify-content: space-evenly;
 }
+
+@media ${device.iPhone678Plus} {
+    width: 80%;  
+    justify-content: space-around;
+    font-size: 5rem;
+  }
 
 `;
 

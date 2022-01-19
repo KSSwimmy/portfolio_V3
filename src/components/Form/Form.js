@@ -152,7 +152,7 @@ justify-content: space-around;
 
 }
 
-@media ${device.samsungGalaxyS20Ultra} {
+@media ${device.samsungGalaxyS20Ultra.iPhone678Plus} {
   width: 85%;  
   
 }
@@ -176,6 +176,11 @@ const LetsTalkBorderDiv = styled.div`
 text-align: center;
 width: 350px;
 margin: 0 auto;
+
+@media ${device.iPhone678Plus} {
+    
+  margin-top: 50px;
+}
 
 `;
 
