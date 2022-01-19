@@ -306,7 +306,7 @@ const FormDiv = styled.div`
 
 const Icons = styled.div`
 color: #DCE3FF;
-font-size: 5rem;
+font-size: 6rem;
 width: 80%;
 text-align: center;
 display: flex;
