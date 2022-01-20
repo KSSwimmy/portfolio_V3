@@ -39,8 +39,12 @@ const ParDivMobile = styled.div`
   position: fixed;
   z-index: 300;
   width: 100%;
-  height: 100vh ;
+  height: 100vh;
   
+  @media screen and (min-width: 1001px) and (max-width: 2000px) {
+    display: none;
+
+  }
 };
 
 
