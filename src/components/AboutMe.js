@@ -72,7 +72,7 @@ text-align: center;
 const FirstP = styled.div`
 font-family: 'Open Sans', sans-serif;
 color: #DCE3FF;
-text-align: left;
+text-align: center;
 font-size: 2.5rem ;
 margin-bottom: 40px;
 line-height: 1.5;
