@@ -125,7 +125,7 @@ const MobileParallaxEffect = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.95} 
-                       speed={3}>
+                       speed={2}>
           <img
           style={{width:'13%', marginTop:'5%', marginLeft: '17%'}}  
           src={Satellite} 
