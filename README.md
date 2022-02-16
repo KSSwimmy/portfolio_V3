@@ -5,11 +5,14 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cac26ca8-b7df-4185-b861-32225b28a58f/deploy-status)](https://ksswinton.com)
 
 ### What I used to build:
-- React JS ⚛️
+- [React JS](https://reactjs.org/) ⚛️
 - [Styled Components](https://styled-components.com/) 💅🏾
 - [React Spring](https://react-spring.io/) ⚾️
 - [Font Awesome](https://fontawesome.com/) 🦄
-- Adobe Illustrator 
+- [React Hook Form](https://react-hook-form.com/) 📑
+- [EmailJS](https://www.emailjs.com/) 📩
+- [Adobe Illustrator](https://www.adobe.com/products/illustrator.html?sdid=KKQML&mv=search&ef_id=Cj0KCQiA3rKQBhCNARIsACUEW_Yh7dlG8dqV0vHNKzruduZMxZJhgz5zqjA5W4656evzL3GzCtPrqwUaAm67EALw_wcB%253AG%253As&s_kwcid=AL%213085%213%21442365417815%21e%21%21g%21%21adobe%2520illustrator%211711729586%2170905759510&gclid=Cj0KCQiA3rKQBhCNARIsACUEW_Yh7dlG8dqV0vHNKzruduZMxZJhgz5zqjA5W4656evzL3GzCtPrqwUaAm67EALw_wcB) 🎨
+- [Adobe Xd](https://www.adobe.com/creativecloud/business/teams.html?sdid=B16P3W9X&mv=search&ef_id=Cj0KCQiA3rKQBhCNARIsACUEW_b3Y6Jy3uPgB9cT7APVEO-UWqn3Yg1EDjiKkGlmEkFD3PkgDBRBW1oaAqBLEALw_wcB:G:s&s_kwcid=AL!3085!3!566814725673!e!!g!!adobe%20xd!15482932269!136265041128) 👩🏾‍🎨
 ---
 ### Planning
 
@@ -20,7 +23,8 @@ The inspiration for this entire portfolio came from my love of purple and space.
 
 ##### Portfolio Inspiration
 The inspiration for the current layout came from [HTML5UP's website](https://html5up.net/paradigm-shift). I was going to use that particular template and implement what I already had, but at the time I was in a rush to complete my portfolio. 
-<br> SO! I decided it was best to use what I already had while also taking inspiration from HTML5UP's layout. 
+<br> 
+SO! I decided it was best to use what I already had while also taking inspiration from HTML5UP's layout. 
 
 ---
 ### The Original Layout
