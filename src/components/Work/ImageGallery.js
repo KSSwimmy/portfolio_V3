@@ -36,41 +36,7 @@ const ImageGallery = () => {
        
     ];
 
-    const [modalIndex, setModalIndex] = useState(0)
-
-    // Next contnet
-    const nextModalContent = () => {
-    setModalIndex((prev) => {
-      if (prev === modalContent.length - 1) {
-        // On the last content modalContent index
-        // Close modal and set back to 0
-        modalRef.current.hide();
-        return 0;
-      }
-      return prev + 1;
-    });
-  };
-
-
-  // Go to previous content //
-  const prevModalContent = () => {
-    setModalIndex((prev) => {
-      if (prev === 0) {
-        // If on first modalContent then stay on first
-        return 0;
-      }
-      return prev - 1;
-    });
-  };
-
-  // *optional*
-  // if the modal is closed by clicking the backdrop then set the index back to 0
-  // to show first content again
-  const handleModalClose = () => {
-    setModalIndex(0);
-  };
-    
-    
+       
 
     return(
         <OpenModal>

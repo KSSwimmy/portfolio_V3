@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { device } from '../../device'
 
+
+
+
 // In order to use a ref in a functional component, forwardRef() must be used. 
 
 const ReUsableModal = forwardRef(

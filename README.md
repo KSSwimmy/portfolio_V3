@@ -21,7 +21,7 @@ This website has gone through a lot of changes... for the better of course!
 ##### Portfolio Inspiration
 The inspiration for this entire portfolio came from my love of purple and space. My goal was to challenge myself by creating something that I've never seen before. I knew I wanted to use the parallax effect after being inspired by someone's post I saw on Linkedin. I lurked on his Linkedin to find his Github to dissect his code, but it wasn't even in his GitHub.
 
-##### Portfolio Inspiration
+##### Portfolio LAYOUT Inspiration
 The inspiration for the current layout came from [HTML5UP's website](https://html5up.net/paradigm-shift). I was going to use that particular template and implement what I already had, but at the time I was in a rush to complete my portfolio. 
 <br> 
 SO! I decided it was best to use what I already had while also taking inspiration from HTML5UP's layout. 
