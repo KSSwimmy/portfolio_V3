@@ -13,7 +13,7 @@ const Babs = () => {
             </FirstP>
             <Icons>
             <IconContainer>
-                <a href="https://www.figma.com/file/AGiUdiz4UrYUrZN0HBlydE/BABS-Project?node-id=221%3A36" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "figma"]} /></a> 
+                <a href="https://www.figma.com/proto/AGiUdiz4UrYUrZN0HBlydE/BABS-Project?node-id=221%3A37&scaling=min-zoom&page-id=221%3A36&starting-point-node-id=221%3A37&show-proto-sidebar=1" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "figma"]} /></a> 
                 <SubTitle2>Lo-Fi Prototype</SubTitle2>
             </IconContainer>
             <IconContainer>
