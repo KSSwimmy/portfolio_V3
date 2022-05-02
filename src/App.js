@@ -31,9 +31,10 @@ function App() {
   </AppContainer>
   );
 }
+ 
 
 const ParDivMobile = styled.div`
-@media ${device.iPadPro} {
+@media screen and (max-width: 900px) {
   
   position: relative;
   position: fixed;

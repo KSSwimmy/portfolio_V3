@@ -196,8 +196,10 @@ const MobileParallaxEffect = () => {
                 <UXImageGallery />
               </ImageGalleryContainer>
           
-           
-              <Skills />
+              <SkillContainer>
+                <Skills />
+              </SkillContainer>
+              
            
          
 
@@ -237,6 +239,7 @@ const Page = styled.div`
 
   }
 `;
+
 
 const MarginDiv = styled.div`
 @media ${device.iPad} {
@@ -281,7 +284,8 @@ width: 100%;
 `;
 
 const SkillContainer = styled.div`
-margin: 0 auto;
+margin-bottom: 150px;
+;
 `;
 
 const IntroBottomContainer = styled.div `

@@ -166,10 +166,7 @@ align-items: center;
 width: 100%;
 text-align: center;
 
-@media ${device.samsungGalaxyS20Ultra} {
-  
-  
-}
+
 `; 
 
 const LetsTalkBorderDiv = styled.div`
@@ -242,6 +239,11 @@ border-radius: 60px;
 margin: 40px;
 font-family: 'Open Sans', sans-serif;
 background: #DCE3FF;
+
+@media screen and (max-width: 900px) {
+  width: 84%;
+}
+
 `;
 
 const SubmitButton = styled.button`
