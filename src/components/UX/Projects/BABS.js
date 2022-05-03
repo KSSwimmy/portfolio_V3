@@ -13,12 +13,12 @@ const Babs = () => {
             </FirstP>
             <Icons>
             <IconContainer>
-                <a href="https://www.figma.com/proto/AGiUdiz4UrYUrZN0HBlydE/BABS-Project?node-id=221%3A37&scaling=min-zoom&page-id=221%3A36&starting-point-node-id=221%3A37&show-proto-sidebar=1" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "figma"]} /></a> 
-                <SubTitle2>Lo-Fi Prototype</SubTitle2>
+                <a href="https://www.figma.com/proto/AGiUdiz4UrYUrZN0HBlydE/BABS-Project?node-id=1021%3A1129&scaling=scale-down&page-id=1021%3A952&starting-point-node-id=1021%3A953&show-proto-sidebar=1" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "figma"]} /></a> 
+                <SubTitle2>Hi-Fi Prototype</SubTitle2>
             </IconContainer>
             <IconContainer>
-            <a href="https://docs.google.com/document/d/1fd5N4CUGtbPPqNpJirQwnUutNMHB7_p2zLWgEhRh5k0/edit?usp=sharing" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fas", "file-alt"]}/></a> 
-                <SubTitle2>Case Study Draft Google Doc</SubTitle2>
+            <a href="https://medium.com/@kimberlyswinton/b-a-b-s-beauty-app-beauty-supply-a-ux-ui-case-study-8e6e3bbb09e4" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fas", "file-alt"]}/></a> 
+                <SubTitle2>Case Study - Medium Article </SubTitle2>
             </IconContainer>  
             <IconContainer>
                 <a href="https://www.figma.com/file/EII5ZmrpASnrW9UDr7aEIu/Case-Study-Layout?node-id=0%3A1" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={["fab", "figma"]} /></a> 
